@@ -4,22 +4,21 @@
   | default @import url()
   |============================
 */
+@import url('../../node_modules/modern-normalize/modern-normalize.css');
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./base.css');
 @import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url('./artist-page.css');
+@import url('./create-account.css');
+@import url('./footer.css');
+@import url('./connect-wallet.css');
+@import url('./hp-browse-categories.css');
+@import url('./hp-discover.css');
+@import url('./hp-hero.css');
+@import url('./hp-how-it-works.css');
+@import url('./hp-magic-mushrooms.css');
+@import url('./hp-top-creators.css');
+@import url('./hp-trending.css');
+@import url('./marketplace.css');
+@import url('./nft-page.css');
+@import url('./rankings.css');

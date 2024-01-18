@@ -1,0 +1,124 @@
+:root {
+  --bg: #2b2b2b;
+  --bg-secondary: #3b3b3b;
+  --caption-lable: #858584;
+  --text: #fff;
+  --cta: #a259ff;
+
+  --gradient-1: linear-gradient(101deg, #a259ff 13.57%, #ff6250 97.65%);
+  --gradient-2: linear-gradient(128deg, #a259ff 49.75%, #377df7 136.56%);
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('../fonts/SpaceMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/WorkSans-SemiBold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../fonts/SpaceMono-Regular.woff2') format('woff2'),
+    url('../fonts/SpaceMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../fonts/SpaceMono-Bold.woff2') format('woff2'),
+    url('../fonts/SpaceMono-Bold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text);
+  font-family: Work Sans, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+  background: var(--bg);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 1280px) {
+  p {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+.section {
+  padding: 40px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 75px 0;
+  }
+}
