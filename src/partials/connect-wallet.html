@@ -1,5 +1,53 @@
-<load ="header.html" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Wallet</title>
+    <link rel="stylesheet" href="../css/connect-wallet.css" />
+  </head>
+  <body>
+    <!-- <load ="header.html" /> -->
 
-<!-- Write your code here -->
+    <section class="section connect-wallet container">
+      <img
+        srcset="
+          ../img/connect-wallet/connect-wallet_img_1x.webp 1x,
+          ../img/connect-wallet/connect-wallet_img_2x.webp 2x
+        "
+        src="../img/connect-wallet/connect-wallet_img_1x.webp"
+        alt="Wallet image"
+        width="375"
+        height="235"
+      />
+      <div class="connection-block">
+        <h1 class="connection-block-title">Connect Wallet</h1>
+        <p class="connection-block-subtitle">
+          Choose a wallet you want to connect. There are several wallet
+          providers.
+        </p>
+        <div class="connection-blok-wallet">
+          <svg class="connection-blok-wallet-img" width="32" height="32">
+            <use href="../img/icons.svg#icon-Metamask"></use>
+          </svg>
+          <p class="wallet-name">Metamask</p>
+        </div>
+        <div class="connection-blok-wallet">
+          <svg class="connection-blok-wallet-img" width="32" height="32">
+            <use href="../img/icons.svg#icon-WalletConnect"></use>
+          </svg>
+          <p class="wallet-name">Wallet Connect</p>
+        </div>
+        <div class="connection-blok-wallet">
+          <svg class="connection-blok-wallet-img" width="32" height="32">
+            <use href="../img/icons.svg#icon-Coinbase"></use>
+          </svg>
+          <p class="wallet-name">Coinbase</p>
+        </div>
+      </div>
+    </section>
 
-<load ="footer.html" />
+    <!-- <load ="footer.html" /> -->
+  </body>
+</html>
