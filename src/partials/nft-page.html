@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dff-nft-project</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/nft-page.css" />
   </head>
   <body>
     <load ="./header.html" />
@@ -13,24 +13,32 @@
     <main>
       <section class="nft">
         <div class="container">
-          <div class="nft-image"></div>
           <div class="nft-info">
             <div class="nft-title-box">
               <h1 class="">The Orbitians</h1>
               <p>Minted on Sep 30, 2022</p>
             </div>
             <load ="./timer.html" buttonIsHidden="true" />
-            <div class="nft-created-by">
+            <div class="nft-info-box nft-info-box--1">
               <p>Created by</p>
-              <a href="#"><img src="" alt="Author avatar" />Orbitian</a>
+              <a href="#" class="nft-info-link"
+                ><img
+                  src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                  srcset="
+                    ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                    ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                  "
+                  alt="Author avatar"
+                />Orbitian</a
+              >
             </div>
-            <div>
-              Description
+            <div class="nft-info-box">
+              <p>Description</p>
               <pre>
 The Orbitians
 is a collection of 10,000 unique NFTs on
 the Ethereum blockchain,
-
+      
 There are all sorts of beings in the NFT
 Universe. The most advanced and
 friendly of the bunch are Orbitians. 
@@ -48,36 +56,399 @@ other way to be. Upside-Downs believe
 that they will be able to win this war if 
 they could only get an eye into Orbitian 
 territory, so they've taken to make
-human beings their target.
-              </pre>
+human beings their target.</pre
+              >
             </div>
-            <div>
+            <div class="nft-info-box">
               <p>Details</p>
-              <ul>
-                <li>
-                  <svg class="icon-globe" width="24" height="24">
-                    <use href="../img/icons.svg#icon-Globe"></use>
-                  </svg>
-                  View on Etherscan
+              <ul class="details-list">
+                <li class="details-item">
+                  <a href="#" class="nft-info-link"
+                    ><svg class="icon-globe" width="24" height="24">
+                      <use href="../img/icons.svg#icon-Globe"></use>
+                    </svg>
+                    View on Etherscan</a
+                  >
                 </li>
-                <li>
-                  <svg class="icon-globe" width="24" height="24">
-                    <use href="../img/icons.svg#icon-Globe"></use>
-                  </svg>
-                  View on Original
+                <li class="details-item">
+                  <a href="#" class="nft-info-link"
+                    ><svg class="icon-globe" width="24" height="24">
+                      <use href="../img/icons.svg#icon-Globe"></use>
+                    </svg>
+                    View on Original</a
+                  >
                 </li>
               </ul>
             </div>
-            <div>
-              <p>Tags</p>
-              <ul>
-                <li><a href="#">Animation</a></li>
-                <li><a href="#">Illustration</a></li>
-                <li><a href="#">Moon</a></li>
-                <li><a href="#">Moon</a></li>
+            <div class="nft-info-box">
+              <p class="tags-text">Tags</p>
+              <ul class="tags-list">
+                <li><a href="#" class="tags-link">Animation</a></li>
+                <li><a href="#" class="tags-link">Illustration</a></li>
+                <li><a href="#" class="tags-link">Moon</a></li>
+                <li><a href="#" class="tags-link">Moon</a></li>
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="collection">
+        <div class="container">
+          <h2 class="section-title">More from this artist</h2>
+          <ul class="collection-list">
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_01_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_01_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_01_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Foxy Life</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_02_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_02_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_02_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Cat from future</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_03_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_03_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_03_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Psycho Dog</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_04_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_04_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_04_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Designer Bear</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_05_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_05_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_05_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Dancing Robot 0375</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_06_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_06_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_06_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Dancing Robot 0356</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_07_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_07_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_07_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Dancing Robot 0321</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_08_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_08_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_08_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Dancing Robot 0512</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="card">
+              <a href="#">
+                <article>
+                  <header>
+                    <img
+                      src="../img/nft-page/nft-page_card-img_09_1x.webp"
+                      srcset="
+                        ../img/nft-page/nft-page_card-img_09_1x.webp 1x,
+                        ../img/nft-page/nft-page_card-img_09_2x.webp 2x
+                      "
+                      alt="NFT image"
+                    />
+                  </header>
+                  <div class="card-body">
+                    <h3 class="card-heading">Dancing Robot 0024</h3>
+                    <div class="nft-info-link">
+                      <img
+                        src="../img/nft-page/nft-page_card_avatar_1x.webp"
+                        srcset="
+                          ../img/nft-page/nft-page_card_avatar_1x.webp 1x,
+                          ../img/nft-page/nft-page_card_avatar_2x.webp 2x
+                        "
+                        alt="Author avatar"
+                      />Orbitian
+                    </div>
+                    <ul class="card-list">
+                      <li class="item">
+                        <p class="item-title">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </li>
+                      <li class="item">
+                        <p class="item-title">Highest bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article></a
+              >
+            </li>
+          </ul>
         </div>
       </section>
     </main>
