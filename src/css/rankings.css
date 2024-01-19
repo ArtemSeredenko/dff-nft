@@ -1,10 +1,4 @@
-@import url(../../node_modules/modern-normalize/modern-normalize.css);
-@import url(./reset.css);
-@import url(./base.css);
-@import url(./header.css);
-@import url(./footer.css);
-/* 
-@import url(./styles.css); */
+@import url(./styles.css);
 
 .section {}
 
