@@ -1,0 +1,87 @@
+.timer {
+  margin-top: 20px;
+  padding: 30px;
+
+  border-radius: 20px;
+  background: rgba(59, 59, 59, 0.5);
+
+  backdrop-filter: blur(5px);
+
+  font-family: 'Space Mono';
+  font-size: 12px;
+
+  line-height: 110%;
+}
+
+.timer p,
+.timer-units {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.timer p {
+  margin-bottom: 10px;
+}
+
+.timer-field {
+  display: inline-block;
+}
+
+.timer-field:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+.timer-value {
+  position: relative;
+
+  min-width: 60px;
+  max-height: 46px;
+  display: inline-block;
+
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.timer-units {
+  display: block;
+}
+
+.timer-field:not(:last-of-type) .timer-value::after {
+  content: ':';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 18px;
+
+  min-height: 46px;
+
+  margin-left: 20px;
+
+  font-size: 28px;
+
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.timer-units {
+  margin-top: 5px;
+}
+
+.timer-btn {
+  padding: 19px 50px;
+  margin-top: 30px;
+
+  min-width: 255px;
+
+  border: none;
+  border-radius: 20px;
+
+  color: inherit;
+  background-color: var(--cta);
+
+  font-family: 'Work Sans';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
