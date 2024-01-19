@@ -1,8 +1,4 @@
-@import url(../../node_modules/modern-normalize/modern-normalize.css);
-@import url(./reset.css);
-@import url(./base.css);
-@import url(./header.css);
-@import url(./footer.css);
+@import url(./styles.css);
 
 .connect-wallet {
   display: flex;
@@ -33,7 +29,4 @@
   padding-left: 40px;
   margin-top: 30px;
   background-color: var(--bg-secondary);
-}
-
-.wallet-name {
 }
