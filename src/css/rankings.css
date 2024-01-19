@@ -1,4 +1,83 @@
+@import url(../../node_modules/modern-normalize/modern-normalize.css);
 @import url(./reset.css);
 @import url(./base.css);
 @import url(./header.css);
 @import url(./footer.css);
+/* 
+@import url(./styles.css); */
+
+.section {}
+
+.top-creators {
+    outline: 1px solid green;
+}
+
+.container {
+    outline: 1px solid red;
+}
+
+.page-title {
+    margin-bottom: 20px;
+    font-size: 51px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+.page-title-text {}
+
+.rankings-section {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-link {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 15px 30px;
+    width: calc(100%/4);
+    color: var(--caption-label);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+
+.filter-link-active {
+    color: var(--text);
+}
+
+.filter-link-active::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--caption-label);
+}
+
+.table-header {}
+
+.rankings-list {}
+
+.rankings-item {}
+
+.rank-number {}
+
+.creator-avatar {}
+
+.creator-name {}
+
+.change-value {}
+
+.amount-sold {}
+
+.volume {}
