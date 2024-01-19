@@ -1,0 +1,39 @@
+@import url(../../node_modules/modern-normalize/modern-normalize.css);
+@import url(./reset.css);
+@import url(./base.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+.connect-wallet {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.connection-block {
+  padding: 0 30px;
+}
+.connection-block-title {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.connection-block-subtitle {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.connection-blok-wallet {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid var(--cta);
+  border-radius: 20px;
+  padding: 14px 20px;
+  padding-left: 40px;
+  margin-top: 30px;
+  background-color: var(--bg-secondary);
+}
+
+.wallet-name {
+}
