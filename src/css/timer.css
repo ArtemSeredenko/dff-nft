@@ -2,6 +2,8 @@
 
 .timer {
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px;
 
   border-radius: 20px;
@@ -13,12 +15,17 @@
   font-size: 12px;
 
   line-height: 110%;
+
+  max-width: 295px;
+}
+
+.timer * {
+  line-height: 110%;
 }
 
 .timer p,
 .timer-units {
   font-size: inherit;
-  line-height: inherit;
 }
 
 .timer p {
@@ -30,7 +37,7 @@
 }
 
 .timer-field:not(:first-of-type) {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .timer-value {
@@ -58,7 +65,7 @@
 
   min-height: 46px;
 
-  margin-left: 20px;
+  margin-left: 15px;
 
   font-size: 28px;
 
@@ -74,7 +81,7 @@
   padding: 19px 50px;
   margin-top: 30px;
 
-  min-width: 255px;
+  min-width: 235px;
 
   border: none;
   border-radius: 20px;
