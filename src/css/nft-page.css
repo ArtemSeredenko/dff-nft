@@ -202,3 +202,27 @@ body {
   font-size: 12px;
   line-height: 110%;
 }
+
+.btn-load-more {
+  display: inline-flex;
+  gap: 12px;
+
+  margin-top: 30px;
+  padding: 17px 50px;
+
+  border-radius: 20px;
+  border: 2px solid var(--cta);
+
+  font-weight: 600;
+
+  transition: all 250ms ease-in-out;
+}
+
+.btn-load-more:hover,
+.btn-load-more:focus-visible {
+  background-color: var(--cta);
+}
+
+.btn-load-more .icon-arrow {
+  fill: var(--cta);
+}
