@@ -19,6 +19,12 @@
   max-width: 295px;
 }
 
+@media screen and (min-width: 834px) {
+  .timer {
+    max-width: 295px;
+  }
+}
+
 .timer * {
   line-height: 110%;
 }
