@@ -6,11 +6,16 @@
 pre {
   font-family: inherit;
   margin: 0;
-  font-size: 22px;
 }
 
 body {
   text-transform: none;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 22px;
+  }
 }
 
 .nft .container {
@@ -22,6 +27,9 @@ body {
   display: block;
 
   height: 320px;
+  max-width: 1280px;
+
+  margin: 0 auto;
 
   background-image: url(../../img/nft-page/nft-page_hero_mobile_1x.webp);
   background-size: cover;
@@ -37,6 +45,7 @@ body {
 
 @media screen and (min-width: 834px) {
   .nft::before {
+    height: 420px;
     background-image: url(../../img/nft-page/nft-page_hero_tablet_1x.webp);
   }
 }
@@ -49,6 +58,8 @@ body {
 
 @media screen and (min-width: 1280px) {
   .nft::before {
+    height: 560px;
+
     background-image: url(../../img/nft-page/nft-page_hero_1x.webp);
   }
 }
@@ -89,9 +100,32 @@ body {
   }
 }
 
+@media screen and (min-width: 834px) {
+  .nft-title-box h1 {
+    font-size: 51px;
+    line-height: 110%;
+  }
+}
+
 .nft-title-box > p {
   margin-top: 10px;
   color: var(--caption-label);
+}
+
+@media screen and (min-width: 1280px) {
+  .nft-title-box > p {
+    font-size: 22px;
+
+    line-height: 160%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nft-info-box > p {
+    font-size: 22px;
+
+    line-height: 160%;
+  }
 }
 
 .description {
@@ -101,6 +135,12 @@ body {
 @media screen and (min-width: 834px) {
   .description {
     max-width: 365px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .description {
+    max-width: 605px;
   }
 }
 
@@ -127,7 +167,6 @@ body {
 
   font-family: 'Space Mono';
   color: var(--caption-label);
-  line-height: inherit;
 
   text-transform: capitalize;
 }
@@ -151,6 +190,16 @@ body {
 
 .details-item:not(:last-child) {
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1280px) {
+  .tags-list {
+    font-size: initial;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .tags-text {
@@ -199,6 +248,14 @@ body {
   font-weight: 600;
 }
 
+@media screen and (min-width: 1280px) {
+  .collection .section-title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+}
+
 .collection-list {
   display: flex;
   flex-direction: column;
@@ -215,6 +272,20 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .collection-list {
+    margin-top: 80px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .collection-list * {
+    font-size: initial;
   }
 }
 
@@ -243,6 +314,23 @@ body {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .collection-list .card {
+    flex-basis: calc((100% - 30px) / 3);
+    max-width: 330px;
+  }
+
+  .collection-list .card:nth-child(3),
+  .collection-list .card:nth-child(4),
+  .collection-list .card:nth-child(5),
+  .collection-list .card:nth-child(6),
+  .collection-list .card:nth-child(7),
+  .collection-list .card:nth-child(8),
+  .collection-list .card:nth-child(9) {
+    display: block;
+  }
+}
+
 .card-body {
   padding: 20px 30px 25px;
   font-family: 'Space Mono';
@@ -266,6 +354,8 @@ body {
   justify-content: space-between;
 
   margin-top: 25px;
+
+  font-size: 16px;
 }
 
 .card-list .item:last-child {
@@ -283,6 +373,7 @@ body {
 
 .btn-load-more {
   display: inline-flex;
+  align-items: center;
   gap: 12px;
 
   margin-top: 30px;
