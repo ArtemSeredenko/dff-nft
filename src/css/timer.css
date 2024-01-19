@@ -1,3 +1,5 @@
+/* Підключи цей файл до своєї сторінки (НЕ в styles.css) */
+
 .timer {
   margin-top: 20px;
   padding: 30px;
@@ -84,4 +86,8 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 140%;
+}
+
+.timer-btn.hidden {
+  display: none;
 }
