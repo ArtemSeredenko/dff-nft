@@ -21,15 +21,30 @@
           <p class="browse-main-text">
             Browse through more than 50k NFTs on the NFT Marketplace.
           </p>
-
-          <input class="browse-main-input" type="text" />
+          <div class="browe-main-input-wrapper">
+            <input
+              class="browse-main-input"
+              type="text"
+              placeholder="Search your favourite NFTs"
+            />
+            <svg class="browse-main-input-img" width="24" height="24">
+              <use href="./img/icons.svg#icon-MagnifyingGlass"></use>
+            </svg>
+          </div>
         </div>
       </section>
       <section class="nft-or-collections">
         <div class="container">
           <div class="nft-colections-wrapper">
-            <a class="nft-collections-link" href="#">NFTs</a>
-            <a class="nft-collections-link" href="#">Collections</a>
+            <div class="nft-colection-elem active">
+              <a class="nft-collections-link active-nft" href="#">NFTs </a>
+              <div class="elem-number active-number">302</div>
+            </div>
+
+            <div class="nft-colection-elem">
+              <a class="nft-collections-link" href="#">Collections </a>
+              <div class="elem-number">67</div>
+            </div>
           </div>
         </div>
       </section>
