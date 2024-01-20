@@ -31,7 +31,11 @@
     }
 }
 
-.page-title-text {}
+@media only screen and (max-width: 1279.98px) {
+    .page-subtitle {
+        line-height: 1.4;
+    }
+}
 
 .rankings-section {
     margin-bottom: 40px;
@@ -53,7 +57,7 @@
     position: relative;
     display: block;
     text-align: center;
-    padding: 19px 30px;
+    padding: 19px 0;
     width: calc(100%/4);
     color: var(--caption-label);
     font-weight: 600;
@@ -63,7 +67,7 @@
 
 @media only screen and (min-width: 1280px) {
     .filter-link {
-        padding: 15px 30px;
+        padding: 15px 0;
         font-size: 22px;
     }
 }
@@ -215,15 +219,16 @@
 
 .rankings-item {
     display: flex;
-    padding: 12px 10px;
+    padding: 0 10px;
     align-items: center;
     border-radius: 20px;
     background: var(--bg-secondary);
+    transition: transform 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 834px) {
     .rankings-item {
-        padding: 12px 20px;
+        padding: 0 20px;
     }
 }
 
@@ -277,7 +282,9 @@
 }
 
 .creator-name {
+    display: block;
     width: 131px;
+    padding: 14px 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -285,11 +292,13 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
+    transition: transform 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 834px) {
     .creator-name {
         width: 330px;
+        padding: 14.5px 0;
         margin-right: 20px;
         font-size: 22px;
         font-weight: 600;
@@ -300,8 +309,13 @@
 @media only screen and (min-width: 1280px) {
     .creator-name {
         width: 300px;
+        padding: 26.5px 0;
         margin-right: 60px;
     }
+}
+
+.rankings-item:hover, .creator-name:focus {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 833.98px) {
