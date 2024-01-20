@@ -1,0 +1,188 @@
+.txt-a-r {
+    text-align: right;
+}
+
+.heading {
+    font-size: 28px;
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+.under-heading {
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.discover-cards {
+    margin-bottom: 40px;
+}
+
+.discover-card {
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+}
+
+.discover-card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.discover-box {
+    padding: 20px 20px 25px;
+}
+
+.discover-box--title {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.discover-box--user {
+    display: flex;
+
+}
+
+.discover-box--user img {
+    margin-right: 12px;
+    margin-bottom: 25px;
+}
+
+.discover-box--price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.disbox-title--top {
+    font-size: 12px;
+    line-height: 1.1;
+    color: var(--caption-label);
+
+    margin-bottom: 8px;
+}
+
+.disbox-title--bottom {
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+.discover-link {
+    display: flex;
+    font-weight: 600;
+    line-height: 1.4;
+    align-items: center;
+    justify-content: center;
+
+
+    width: inherit;
+    padding: 19px 0;
+    border: 2px solid var(--cta);
+    border-radius: 20px;
+
+}
+
+.discover-link svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--cta);
+    margin-right: 12px;
+}
+
+/* Magic Mushrooms */
+
+.magicmush .container {
+    display: none;
+}
+
+.magicmush {
+    height: 590px;
+    background-image: url(../img/homepage/hp_mushroom_mob_1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* How it works */
+
+.hiw-card {
+    padding: 20px;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    column-gap: 20px;
+    grid-template-columns: 100px auto;
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+}
+
+.hiw-card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.hiw-img {
+    width: 100px;
+    height: 100px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+}
+
+.hiw-card h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    grid-column-start: 2;
+    margin-bottom: 10px;
+}
+
+.hiw-card p {
+    font-size: 12px;
+    line-height: 1.4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+/* Subscribe widget */
+
+.subwid-img {
+    margin-bottom: 30px;
+}
+
+.subwid-form input {
+    padding: 12px 20px;
+    width: 100%;
+    background-color: var(--text);
+    border-radius: 20px;
+    border: 1px solid var(--caption-label-text, #858584);
+
+    margin-bottom: 16px;
+}
+
+.subwid-form input::placeholder {
+    color: var(--Background, #2B2B2B);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.subwid-form button {
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    line-height: 1.4;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cta) ;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+.subwid-form svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--text);
+    margin-right: 12px;
+}
