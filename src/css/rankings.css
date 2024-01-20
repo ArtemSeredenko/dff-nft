@@ -2,16 +2,33 @@
 
 .section {}
 
-.top-creators {
-
+@media only screen and (max-width: 833.98px) {
+    .top-creators {
+        padding: 30px 0;
+    }
 }
 
 .page-title {
-    margin-bottom: 20px;
-    font-size: 51px;
+    margin-bottom: 10px;
+    font-size: 28px;
     font-weight: 600;
-    line-height: 1.1;
+    line-height: 1.4;
     text-transform: capitalize;
+}
+
+@media only screen and (min-width: 834px) {
+    .page-title {
+        margin-bottom: 20px;
+        font-size: 38px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .page-title {
+        font-size: 51px;
+        line-height: 1.1;
+    }
 }
 
 .page-title-text {}
@@ -26,17 +43,29 @@
     margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 833.98px) {
+    .filter {
+        display: none;
+    }
+}
+
 .filter-link {
     position: relative;
     display: block;
     text-align: center;
-    padding: 15px 30px;
+    padding: 19px 30px;
     width: calc(100%/4);
     color: var(--caption-label);
-    font-size: 22px;
     font-weight: 600;
     line-height: 1.4;
     text-transform: capitalize;
+}
+
+@media only screen and (min-width: 1280px) {
+    .filter-link {
+        padding: 15px 30px;
+        font-size: 22px;
+    }
 }
 
 .filter-link-active {
@@ -54,68 +83,148 @@
     background-color: var(--caption-label);
 }
 
+.filter-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 833.98px) {
+    .filter-mobile {
+        display: none;
+    }
+}
+
 .table-header {
     display: flex;
     margin-bottom: 20px;
-    padding: 12px 20px;
+    padding: 12px 10px;
     align-items: center;
     border-radius: 20px;
     border: 1px solid var(--bg-secondary);
 }
 
+@media only screen and (min-width: 834px) {
+    .table-header {
+        padding: 12px 20px;
+    }
+}
+
 .number {
     text-align: center;
-    width: 30px;
-    margin-right: 20px;
+    width: 24px;
+    margin-right: 10px;
     color: var(--caption-label);
-        font-family: "Space Mono";
-        font-size: 16px;
-        line-height: 1.4;
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media only screen and (min-width: 834px) {
+    .number {
+        width: 30px;
+        margin-right: 20px;
+    }
 }
 
 .artist {
-    margin-right: 381px;
-    color: var(--caption-label-text);
-        font-family: "Space Mono";
-        font-size: 16px;
-        line-height: 1.4;
+    min-width: 181px;
+    color: var(--caption-label);
+    font-family: "Space Mono";
+    font-size: 12px;
+    line-height: 1.1;
 }
 
-.change {
-    width: 160px;
-    margin-right: 20px;
-    color: var(--caption-label);
+@media only screen and (min-width: 834px) {
+    .artist {
+        min-width: 59px;
+        margin-right: 321px;
+        color: var(--caption-label);
         font-family: "Space Mono";
         font-size: 16px;
         line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .artist {
+        margin-right: 381px;
+    }
+}
+
+@media only screen and (max-width: 833.98px) {
+    .change {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 834px) {
+    .change {
+        width: 100px;
+        margin-right: 20px;
+        color: var(--caption-label);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .change {
+        width: 160px;
+    }
 }
 
 .nft-sold {
     width: 160px;
     margin-right: 20px;
     color: var(--caption-label);
-        font-family: "Space Mono";
-        font-size: 16px;
-        line-height: 1.4;
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 1279.98px) {
+    .nft-sold {
+        display: none;
+    }
 }
 
 .volume {
-    width: 160px;
+    width: 100px;
     color: var(--caption-label);
-        font-family: "Space Mono";
+    font-family: "Space Mono";
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+@media only screen and (min-width: 834px) {
+    .volume {
         font-size: 16px;
         line-height: 1.4;
+    }
+}
 
+@media only screen and (min-width: 1280px) {
+    .volume {
+        width: 160px;
+    }
 }
 
 .rankings-list {}
 
 .rankings-item {
     display: flex;
-    padding: 12px 20px;
+    padding: 12px 10px;
     align-items: center;
     border-radius: 20px;
-    background: var(--Background---Secondary, #3B3B3B);
+    background: var(--bg-secondary);
+}
+
+@media only screen and (min-width: 834px) {
+    .rankings-item {
+        padding: 12px 20px;
+    }
 }
 
 .rankings-item:not(:last-child) {
@@ -126,52 +235,131 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border-radius: 20px;
-    background: var(--bg);
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: 10px;
     color: var(--caption-label);
     font-family: "Space Mono";
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+@media only screen and (min-width: 834px) {
+    .rank-number {
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .rank-number {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--bg);
+    }
 }
 
 .creator-avatar {
-    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+@media only screen and (min-width: 1280px) {
+    .creator-avatar {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
 }
 
 .creator-name {
-    width: 300px;
-    margin-right: 60px;
-    font-size: 22px;
-    font-weight: 600;
+    width: 131px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 14px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.4;
 }
 
-.change-value {
-    width: 160px;
-    margin-right: 20px;
-    color: #00AC4F;
-    font-family: "Space Mono";
-    font-size: 16px;
-    line-height: 1.4;
+@media only screen and (min-width: 834px) {
+    .creator-name {
+        width: 330px;
+        margin-right: 20px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .creator-name {
+        width: 300px;
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 833.98px) {
+    .change-value {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 834px) {
+    .change-value {
+        width: 100px;
+        margin-right: 20px;
+        color: #00AC4F;
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .change-value {
+        width: 160px;
+    }
 }
 
 .amount-sold {
     width: 160px;
     margin-right: 20px;
     color: var(--text);
-        font-family: "Space Mono";
-        font-size: 16px;
-        line-height: 140%;
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 140%;
+}
+
+@media only screen and (max-width: 1279.98px) {
+    .amount-sold {
+        display: none;
+    }
 }
 
 .volume-amount {
-    width: 160px;
+    width: 80px;
     color: var(--text);
-        font-family: "Space Mono";
+    font-family: "Space Mono";
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+@media only screen and (min-width: 834px) {
+    .volume-amount {
+        width: 100px;
         font-size: 16px;
         line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .volume-amount {
+        width: 160px;
+    }
 }
