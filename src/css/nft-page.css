@@ -31,7 +31,7 @@ body {
 
   margin: 0 auto;
 
-  background-image: url(../../img/nft-page/nft-page_hero_mobile_1x.webp);
+  background-image: url(../img/nft-page/nft-page_hero_mobile_1x.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,20 +39,20 @@ body {
 
 @media screen and (min-resolution: 192dpi) {
   .nft::before {
-    background-image: url(../../img/nft-page/nft-page_hero_mobile_2x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_mobile_2x.webp);
   }
 }
 
 @media screen and (min-width: 834px) {
   .nft::before {
     height: 420px;
-    background-image: url(../../img/nft-page/nft-page_hero_tablet_1x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_tablet_1x.webp);
   }
 }
 
 @media screen and (min-width: 834px) and (min-resolution: 192dpi) {
   .nft::before {
-    background-image: url(../../img/nft-page/nft-page_hero_tablet_2x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_tablet_2x.webp);
   }
 }
 
@@ -60,13 +60,13 @@ body {
   .nft::before {
     height: 560px;
 
-    background-image: url(../../img/nft-page/nft-page_hero_1x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_1x.webp);
   }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .nft::before {
-    background-image: url(../../img/nft-page/nft-page_hero_2x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_2x.webp);
   }
 }
 
