@@ -3,11 +3,7 @@
 .section {}
 
 .top-creators {
-    outline: 1px solid green;
-}
 
-.container {
-    outline: 1px solid red;
 }
 
 .page-title {
@@ -21,13 +17,13 @@
 .page-title-text {}
 
 .rankings-section {
-    margin-top: 0;
     margin-bottom: 40px;
 }
 
 .filter {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .filter-link {
@@ -47,7 +43,7 @@
     color: var(--text);
 }
 
-.filter-link-active::after{
+.filter-link-active::after {
     content: ' ';
     position: absolute;
     bottom: 0;
@@ -58,20 +54,124 @@
     background-color: var(--caption-label);
 }
 
-.table-header {}
+.table-header {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--bg-secondary);
+}
+
+.number {
+    text-align: center;
+    width: 30px;
+    margin-right: 20px;
+    color: var(--caption-label);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+}
+
+.artist {
+    margin-right: 381px;
+    color: var(--caption-label-text);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+}
+
+.change {
+    width: 160px;
+    margin-right: 20px;
+    color: var(--caption-label);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+}
+
+.nft-sold {
+    width: 160px;
+    margin-right: 20px;
+    color: var(--caption-label);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+}
+
+.volume {
+    width: 160px;
+    color: var(--caption-label);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+
+}
 
 .rankings-list {}
 
-.rankings-item {}
+.rankings-item {
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--Background---Secondary, #3B3B3B);
+}
 
-.rank-number {}
+.rankings-item:not(:last-child) {
+    margin-bottom: 20px;
+}
 
-.creator-avatar {}
+.rank-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border-radius: 20px;
+    background: var(--bg);
+    color: var(--caption-label);
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 1.4;
+}
 
-.creator-name {}
+.creator-avatar {
+    margin-right: 20px;
+}
 
-.change-value {}
+.creator-name {
+    width: 300px;
+    margin-right: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+}
 
-.amount-sold {}
+.change-value {
+    width: 160px;
+    margin-right: 20px;
+    color: #00AC4F;
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 1.4;
+}
 
-.volume {}
+.amount-sold {
+    width: 160px;
+    margin-right: 20px;
+    color: var(--text);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 140%;
+}
+
+.volume-amount {
+    width: 160px;
+    color: var(--text);
+        font-family: "Space Mono";
+        font-size: 16px;
+        line-height: 1.4;
+}
