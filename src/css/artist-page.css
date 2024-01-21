@@ -172,6 +172,7 @@
 
 
 .copy-text-btn {
+    font-size: 16px;
     text-align: center;
     outline: none;
     display: flex;
