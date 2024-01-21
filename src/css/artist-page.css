@@ -4,13 +4,31 @@
 
 /* HERO */
 
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    padding: 5px;
+    background-color: var(--cta);
+    font-size: 15px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
 
+.notification-show {
+    transform: translateX(-50%) translateY(100%);
+}
 
 .hero {
     padding-bottom: 100px;
 }
 
-.hero-contaainer {
+
+.container.hero-contaainer {
     padding-top: 66px;
     position: relative;
 }
@@ -154,6 +172,7 @@
 
 
 .copy-text-btn {
+    font-size: 16px;
     text-align: center;
     outline: none;
     display: flex;
@@ -303,7 +322,7 @@
 
 
 .bio-title {
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 16px;
     font-style: normal;
@@ -347,7 +366,7 @@
 }
 
 .links-title {
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 16px;
     font-style: normal;
@@ -380,7 +399,7 @@
 .social-icon {
     width: 24px;
     height: 24px;
-    fill: var(--caption-label);
+    fill: var(--caption-lable);
 }
 
 @media screen and (min-width:1280px) {
@@ -473,7 +492,7 @@
     border: none;
     border-bottom: transparent;
 
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Work Sans";
     font-size: 16px;
     font-style: normal;
@@ -506,7 +525,7 @@
 
 
 .active-btn {
-    border-bottom: 2px solid var(--caption-label);
+    border-bottom: 2px solid var(--caption-lable);
     color: var(--text);
 }
 
@@ -563,7 +582,7 @@
         padding: 5px 10px;
 
         border-radius: 20px;
-        background: var(--caption-label);
+        background: var(--caption-lable);
 
         color: var(--text);
         font-family: "Space Mono";
@@ -690,7 +709,7 @@
 }
 
 .price-box-title {
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 12px;
     font-style: normal;
