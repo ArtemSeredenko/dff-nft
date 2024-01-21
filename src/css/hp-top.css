@@ -36,6 +36,7 @@
   font-size: 28px;
   font-weight: 600;
   line-height: 1.4;
+  text-transform: capitalize;
 }
 @media only screen and (min-width: 834px) {
   .discr-title {
@@ -269,30 +270,102 @@
 /* Top Creators */
 
 .creators-title {
+  margin-bottom: 10px;
+
+  font-size: 28px;
+  line-height: 1.4;
+  text-transform: capitalize;
 }
 .creators-text {
+  margin-bottom: 40px;
+
+  line-height: 1.4;
 }
 .creators-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 .creators-item {
+  position: relative;
+  display: flex;
+  gap: 20px;
+
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--bg-secondary);
 }
 .list-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background: var(--Background, #2b2b2b);
+
+  color: var(--caption-lable);
+  font-family: 'Space Mono';
+  line-height: 1.4;
 }
 .creators-img {
+  width: 60px;
 }
 .creators-name {
+  margin-bottom: 5px;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: capitalize;
 }
 .total-sales {
+  color: var(--caption-lable);
+  line-height: 1.4;
 }
 .sales-number {
+  margin-left: 5px;
+
+  color: var(--text);
+  /* font-family: 'Space Mono', monospace; */
 }
 .hide-mob {
   display: none;
 }
+@media only screen and (min-width: 834px) {
+  .hide-mob {
+    display: flex;
+  }
+}
 .hide-tablet {
   display: none;
 }
-.view-rankings {
+.btn-view-rankings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  padding: 0 50px;
+  height: 60px;
+  width: 100%;
+
+  border-radius: 20px;
+  border: 2px solid var(--cta);
+  background: transparent;
+
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4;
 }
 .rocket-launch-icon {
+  fill: var(--cta);
 }
