@@ -1,15 +1,19 @@
+@import url('./timer.css');
+
 .txt-a-r {
     text-align: right;
 }
 
 .heading {
     font-size: 28px;
+    font-weight: 600;
     line-height: 1.4;
 
     margin-bottom: 10px;
 }
 
 .under-heading {
+    text-transform: none;
     line-height: 1.4;
     margin-bottom: 40px;
 }
@@ -41,7 +45,10 @@
 
 .discover-box--user {
     display: flex;
+}
 
+.discover-box--user p {
+    line-height: 1.4;
 }
 
 .discover-box--user img {
@@ -52,6 +59,7 @@
 .discover-box--price {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family: Space Mono;
 }
 
 .disbox-title--top {
@@ -63,19 +71,18 @@
 }
 
 .disbox-title--bottom {
-    font-size: 12px;
-    line-height: 1.1;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 .discover-link {
-    display: flex;
+    display: inline-flex;
     font-weight: 600;
     line-height: 1.4;
     align-items: center;
     justify-content: center;
 
 
-    width: inherit;
     padding: 19px 0;
     border: 2px solid var(--cta);
     border-radius: 20px;
@@ -89,23 +96,138 @@
     margin-right: 12px;
 }
 
-/* Magic Mushrooms */
-
-.magicmush .container {
-    display: none;
+@media screen and (max-width: 834px) {
+    .discover-link {
+        width: inherit;
+    }
 }
 
+@media screen and (min-width: 834px) and (max-width: 1280px) {
+    .discover-card:nth-child(3n) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .discover .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .under-heading {
+        margin-bottom: 40px;
+    }
+
+    .discover-cards {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .discover-card {
+        width: 330px;
+    }
+
+    .discover-link {
+        grid-row: 1/3;
+        grid-column-start: 2;
+        height: 60px;
+        margin: auto 0 40px auto;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+    .discover .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .discover-cards {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+
+/* Magic Mushrooms */
+
 .magicmush {
-    height: 590px;
     background-image: url(../img/homepage/hp_mushroom_mob_1x.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+@media screen and (max-width: 834px) {
+    .magicmush .container {
+        display: none;
+    }
+
+    .magicmush {
+        height: 590px;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .magicmush .container {
+        height: 630px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .timer {
+        margin: auto 0 0 auto;
+    }
+
+    .mm-link-ac {
+        display: inline-flex;
+        background-color: var(--bg);
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    .mm-link-ac img {
+        margin-right: 12px;
+    }
+
+    .magicmush .heading {
+        font-size: 38px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .mm-link-markplace {
+        color: var(--bg);
+        display: inline-flex;
+        font-weight: 600;
+        line-height: 1.4;
+        align-items: center;
+        justify-content: center;
+    
+    
+        padding: 20px 50px;
+        border-radius: 20px;
+        background-color: var(--text);
+    }
+    
+    .mm-link-markplace svg {
+        height: 20px;
+        width: 20px;
+        fill: var(--cta);
+        margin-right: 12px;
+    }
+}
+
 /* How it works */
 
 .hiw-card {
+    text-transform: none;
     padding: 20px;
     display: grid;
     justify-self: center;
@@ -114,10 +236,6 @@
     grid-template-columns: 100px auto;
     background-color: var(--bg-secondary);
     border-radius: 20px;
-}
-
-.hiw-card:not(:last-child) {
-    margin-bottom: 20px;
 }
 
 .hiw-img {
@@ -140,6 +258,41 @@
     line-height: 1.4;
     grid-column-start: 2;
     grid-row-start: 2;
+}
+
+@media screen and (max-width: 834px) {
+    .hiw-card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .hiw-cards {
+        display: flex;
+        align-items: stretch;
+        column-gap: 30px;
+    }
+
+    .hiw-card  {
+        display: flex;
+        flex-direction: column;
+        width: 210px;
+        padding-bottom: 30px;
+    }
+
+    .hiw-card img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+
+    .hiw-card h3 {
+        text-align: center;
+    }
+
+    .hiw-card p {
+        text-align: center;
+    }
 }
 
 /* Subscribe widget */
@@ -185,4 +338,20 @@
     width: 20px;
     fill: var(--text);
     margin-right: 12px;
+}
+
+@media screen and (min-width: 834px) {
+    .subwid-content {
+        background-color: var(--bg-secondary);
+        border-radius: 20px;
+        padding: 40px 30px;
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .subwid-img {
+        width: 300px;
+        height: 280px;
+        margin-bottom: 0;
+    }
 }
