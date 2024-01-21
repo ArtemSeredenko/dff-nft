@@ -6,19 +6,74 @@
   gap: 30px;
 }
 
+@media screen and (min-width: 834px) {
+  .connect-wallet {
+    flex-direction: row;
+    padding-top: 40px;
+  }
+  .connect-wallet > img,
+  .connect-wallet > .connection-block {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+  .connect-wallet > img {
+    margin: 0;
+    padding: 0;
+    width: 397px;
+    height: 530px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .connect-wallet > img {
+    width: 610px;
+    height: 642px;
+    object-fit: cover;
+  }
+}
+
 .connection-block {
   padding: 0 30px;
 }
+
+@media screen and (min-width: 834px) {
+  .connection-block {
+    padding: 80px 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .connection-block {
+    padding: 100px 30px;
+  }
+}
+
 .connection-block-title {
   font-size: 38px;
   line-height: 1.2;
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 1280px) {
+  .connection-block-title {
+    font-size: 51px;
+  }
+}
+
 .connection-block-subtitle {
   font-size: 16px;
   line-height: 1.4;
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 1280px) {
+  .connection-block-subtitle {
+    font-size: 22px;
+    max-width: 460px;
+  }
+}
+
 .connection-blok-wallet {
   display: flex;
   gap: 20px;
@@ -29,4 +84,21 @@
   padding-left: 40px;
   margin-top: 30px;
   background-color: var(--bg-secondary);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connection-blok-wallet:hover {
+  border: 1px solid var(--bg-secondary);
+}
+
+@media screen and (min-width: 1280px) {
+  .connection-blok-wallet {
+    max-width: 320px;
+  }
+}
+
+.wallet-name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
 }

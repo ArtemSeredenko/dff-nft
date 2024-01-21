@@ -1,0 +1,254 @@
+@import './styles.css';
+@import './timer.css';
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        padding: 20px 0;
+    }
+}
+
+header .container {
+    padding: 0 30px;
+}
+
+@media screen and (min-width: 768px) {
+    header .container {
+        max-width: 768px;
+        padding: 0 50px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header .container {
+            min-width: 1280px;
+        }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-menu-list {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .header-menu-list {
+        display: flex;
+        flex-shrink: 0;
+        gap: 40px;
+    }
+}
+
+.header-logo-link {
+    display: flex;
+    margin-right: auto;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .header-logo-link {
+        display: flex;
+        margin-right: auto;
+        gap: 12px;
+    }
+}
+
+.header-menu-link {
+    color: var(--text);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+
+.header-menu-list {
+    margin-right: 30px;
+}
+
+.header-logo-icon {
+    fill: var(--cta);
+}
+
+.header-nft-icon {
+    fill: var(--text);
+}
+
+
+.btn-sign-up {
+    display: none;
+}
+
+.btn-sign-up.modal {
+    display: flex;
+    height: 60px;
+    width: 152px;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--cta);
+}
+
+@media screen and (min-width: 1280px) {
+    .btn-sign-up {
+        display: flex;
+        height: 60px;
+        width: 152px;
+        padding: 0px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 20px;
+        background: var(--cta);
+    }
+}
+
+.icon-user {
+    fill: var(--text);
+}
+
+.sign-up-text {
+    color: var(--text);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.menu-btn,
+.menu-close-btn {
+    background-color: transparent;
+    border: none;
+}
+
+/* Mobile Menu */
+
+.menu-btn-icon {
+    fill: var(--text);
+}
+
+@media screen and (min-width: 1280px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+.menu-close-icon {
+    transform: rotate(45deg);
+    fill: var(--text);
+}
+
+.close-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom: 52px;
+}
+
+@media screen and (min-width: 768px) {
+    .close-btn {
+        padding-bottom: 163px;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 300px;
+    height: 100%;
+    flex-shrink: 0;
+    flex-direction: column;
+    transition: transform 300ms ease, visibility 300ms ease;
+    background: linear-gradient(180deg, rgba(114, 39, 209, 0.20) 0%, rgba(152, 143, 111, 0.10) 48.5%, rgba(217, 217, 217, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(17.5px);
+    visibility: hidden;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.icon-modal {
+    fill: var(--text);
+}
+
+.mob-menu {
+    display: flex;
+    padding-left: 45px;
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.mobile-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.btn-modal {
+    padding-left: 40px;
+    padding-top: 133px;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-modal {
+        padding-left: 40px;
+        padding-top: 143px;
+    }
+}

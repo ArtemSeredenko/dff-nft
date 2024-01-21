@@ -31,7 +31,7 @@ body {
 
   margin: 0 auto;
 
-  background-image: url(../../img/nft-page/nft-page_hero_mobile_1x.webp);
+  background-image: url(../img/nft-page/nft-page_hero_mobile_1x.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,20 +39,20 @@ body {
 
 @media screen and (min-resolution: 192dpi) {
   .nft::before {
-    background-image: url(../../img/nft-page/nft-page_hero_mobile_2x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_mobile_2x.webp);
   }
 }
 
 @media screen and (min-width: 834px) {
   .nft::before {
     height: 420px;
-    background-image: url(../../img/nft-page/nft-page_hero_tablet_1x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_tablet_1x.webp);
   }
 }
 
 @media screen and (min-width: 834px) and (min-resolution: 192dpi) {
   .nft::before {
-    background-image: url(../../img/nft-page/nft-page_hero_tablet_2x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_tablet_2x.webp);
   }
 }
 
@@ -60,13 +60,13 @@ body {
   .nft::before {
     height: 560px;
 
-    background-image: url(../../img/nft-page/nft-page_hero_1x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_1x.webp);
   }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .nft::before {
-    background-image: url(../../img/nft-page/nft-page_hero_2x.webp);
+    background-image: url(../img/nft-page/nft-page_hero_2x.webp);
   }
 }
 
@@ -85,6 +85,16 @@ body {
     top: 0;
     right: 0;
   }
+}
+
+.timer-btn {
+  transition: transform 250ms ease-in-out;
+  outline: transparent;
+}
+
+.timer-btn:hover,
+.timer-btn:focus-visible {
+  transform: scale(1.05);
 }
 
 .nft-title-box h1 {
@@ -183,8 +193,8 @@ body {
   transition: fill 250ms ease-in-out;
 }
 
-.details-item:hover .icon-globe,
-.details-item:focus-visible .icon-globe {
+.nft-info-link:hover .icon-globe,
+.nft-info-link:focus-visible .icon-globe {
   fill: var(--cta);
 }
 
@@ -221,11 +231,13 @@ body {
   display: inline-block;
   padding: 12px 30px;
 
-  transition: background-color 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  outline: transparent;
 }
 
 .tags-link:hover,
 .tags-link:focus-visible {
+  transform: scale(1.05);
   background-color: var(--cta);
 }
 
@@ -289,44 +301,56 @@ body {
   }
 }
 
-.collection-list .card {
+.collection-list li {
   display: none;
-
-  border-radius: 20px;
-  overflow: hidden;
 }
 
-.collection-list .card:nth-child(1),
-.collection-list .card:nth-child(2) {
+.collection-list .card {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+
+  transition: all 250ms ease-in-out;
+  outline: transparent;
+}
+
+.collection-list .card:hover,
+.collection-list .card:focus {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 16px 2px black;
+}
+
+.collection-list li:nth-child(1),
+.collection-list li:nth-child(2) {
   display: block;
 }
 
 @media screen and (min-width: 834px) {
-  .collection-list .card {
+  .collection-list li {
     flex-basis: calc((100% - 30px) / 2);
   }
 
-  .collection-list .card:nth-child(3),
-  .collection-list .card:nth-child(4),
-  .collection-list .card:nth-child(5),
-  .collection-list .card:nth-child(6) {
+  .collection-list li:nth-child(3),
+  .collection-list li:nth-child(4),
+  .collection-list li:nth-child(5),
+  .collection-list li:nth-child(6) {
     display: block;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .collection-list .card {
+  .collection-list li {
     flex-basis: calc((100% - 30px) / 3);
     max-width: 330px;
   }
 
-  .collection-list .card:nth-child(3),
-  .collection-list .card:nth-child(4),
-  .collection-list .card:nth-child(5),
-  .collection-list .card:nth-child(6),
-  .collection-list .card:nth-child(7),
-  .collection-list .card:nth-child(8),
-  .collection-list .card:nth-child(9) {
+  .collection-list li:nth-child(3),
+  .collection-list li:nth-child(4),
+  .collection-list li:nth-child(5),
+  .collection-list li:nth-child(6),
+  .collection-list li:nth-child(7),
+  .collection-list li:nth-child(8),
+  .collection-list li:nth-child(9) {
     display: block;
   }
 }
@@ -372,8 +396,9 @@ body {
 }
 
 .btn-load-more {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 
   margin-top: 30px;
@@ -385,10 +410,13 @@ body {
   font-weight: 600;
 
   transition: all 250ms ease-in-out;
+  outline: transparent;
 }
 
 @media screen and (min-width: 834px) {
   .btn-load-more {
+    font-size: 16px;
+    min-width: 267px;
     margin: 0;
     position: absolute;
     top: 0;
@@ -399,6 +427,7 @@ body {
 .btn-load-more:hover,
 .btn-load-more:focus-visible {
   background-color: var(--cta);
+  transform: scale(1.05);
 }
 
 .btn-load-more .icon-arrow {
