@@ -12,7 +12,7 @@
     <title>Artist page</title>
   </head>
   <body>
-    <load src="partials/header.html" />
+    <load ="/header.html" />
     <!--  section hero -->
     <section class="hero">
       <!-- bckgr img hero -->
@@ -34,7 +34,7 @@
               <button
                 class="copy-text-btn"
                 type="button"
-                onclick="copyToClipboard()"
+                id="btn-copy"
                 aria-label="button copy text"
               >
                 <svg class="icon-copy" width="20" height="20">
@@ -84,7 +84,7 @@
             <ul class="links-list">
               <li class="links-list-item">
                 <a
-                  class="                   "
+                  class="social-link"
                   href="https://google.com/"
                   target="_blank"
                   aria-label="link to Browser"
@@ -197,7 +197,7 @@
                       height="24"
                       class="card-avatar"
                     />
-                    <p class="user-name">MoonDancer</p>
+                    <p class="user-name">Animakid</p>
                   </div>
                 </div>
                 <div class="card-box-price">
@@ -241,7 +241,7 @@
                       height="24"
                       class="card-avatar"
                     />
-                    <p class="user-name">NebulaKid</p>
+                    <p class="user-name">Animakid</p>
                   </div>
                 </div>
                 <div class="card-box-price">
@@ -568,6 +568,7 @@
         </ul>
       </div>
     </section>
-    <load src="partials/footer.html" />
+    <div id="notification" class="notification"></div>
+    <script src="js/artist-page.js"></script>
   </body>
 </html>
