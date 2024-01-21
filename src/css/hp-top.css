@@ -269,6 +269,13 @@
 
 /* Top Creators */
 
+@media only screen and (min-width: 834px) {
+  .wrapper-creators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .creators-title {
   margin-bottom: 10px;
 
@@ -276,16 +283,45 @@
   line-height: 1.4;
   text-transform: capitalize;
 }
+@media only screen and (min-width: 1280px) {
+  .creators-title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
 .creators-text {
+  grid-row: 2;
+
   margin-bottom: 40px;
 
   line-height: 1.4;
+}
+@media only screen and (min-width: 1280px) {
+  .creators-text {
+    line-height: 1.6;
+    width: 703px;
+    margin-bottom: 60px;
+  }
 }
 .creators-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 834px) {
+  .creators-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/3;
+    grid-row: 3/5;
+    grid-gap: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .creators-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .creators-item {
   position: relative;
@@ -318,6 +354,13 @@
 .creators-img {
   width: 60px;
 }
+@media only screen and (min-width: 1280px) {
+  .creators-img {
+    width: 120px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
 .creators-name {
   margin-bottom: 5px;
 
@@ -325,6 +368,11 @@
   font-weight: 600;
   line-height: 1.4;
   text-transform: capitalize;
+}
+@media only screen and (min-width: 1280px) {
+  .creators-name {
+    text-align: center;
+  }
 }
 .total-sales {
   color: var(--caption-lable);
@@ -336,6 +384,15 @@
   color: var(--text);
   /* font-family: 'Space Mono', monospace; */
 }
+
+@media only screen and (min-width: 1280px) {
+  .total-sales,
+  .sales-number,
+  .list-number {
+    font-size: 16px;
+    text-align: center;
+  }
+}
 .hide-mob {
   display: none;
 }
@@ -346,6 +403,13 @@
 }
 .hide-tablet {
   display: none;
+}
+@media only screen and (min-width: 1280px) {
+  .hide-tablet,
+  .hide-mob,
+  .creators-item {
+    display: inline-block;
+  }
 }
 .btn-view-rankings {
   display: flex;
@@ -365,6 +429,21 @@
   text-align: center;
   font-weight: 600;
   line-height: 1.4;
+}
+@media only screen and (min-width: 834px) {
+  .btn-view-rankings {
+    grid-row: 1/3;
+    width: 247px;
+    padding: 0;
+    justify-self: end;
+    align-self: flex-end;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .btn-view-rankings {
+    margin-bottom: 60px;
+  }
 }
 .rocket-launch-icon {
   fill: var(--cta);
