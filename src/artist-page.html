@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/artist-page.css" />
+    <title>Artist page</title>
+  </head>
+  <body>
+    <load src="partials/header.html" />
+    <!--  section hero -->
+    <section class="hero">
+      <!-- bckgr img hero -->
+
+      <div class="bckg-box"></div>
+      <div class="container hero-contaainer">
+        <img
+          src="img/artist-page/artist_page_hero_avatar_1x.webp"
+          alt=""
+          width="120"
+          height="120"
+          class="img-avatar"
+        />
+        <div>
+          <h1 class="main-title">Animakid</h1>
+          <!-- link follow -->
+          <ul class="list-copy-follow">
+            <li class="copy-follow-item">
+              <button
+                class="copy-text-btn"
+                type="button"
+                onclick="copyToClipboard()"
+                aria-label="button copy text"
+              >
+                <svg class="icon-copy" width="20" height="20">
+                  <use href="img/icons.svg#icon-Copy"></use>
+                </svg>
+                0xc0E3...B79C
+              </button>
+            </li>
+            <li class="copy-follow-item">
+              <a class="link-follow" href="" aria-label="link follow">
+                <svg class="icon-plus" width="20" height="20">
+                  <use href="img/icons.svg#icon-Plus"></use>
+                </svg>
+                Follow
+              </a>
+            </li>
+          </ul>
+          <!-- statistics -->
+          <ul class="statistics-list">
+            <li class="statistics-list-item">
+              <a href="" aria-label="link volume">
+                <p class="statistics-index">250k+</p>
+                <p class="statistics-text">Volume</p>
+              </a>
+            </li>
+            <li class="statistics-list-item">
+              <a href="" aria-label="link NFTs">
+                <p class="statistics-index">50k+</p>
+                <p class="statistics-text">NFTs</p>
+              </a>
+            </li>
+            <li class="statistics-list-item">
+              <a href="" aria-label="link followers">
+                <p class="statistics-index">3000</p>
+                <p class="statistics-text">Followers</p>
+              </a>
+            </li>
+          </ul>
+          <!-- bio -->
+          <div class="bio-box">
+            <h2 class="bio-title">Bio</h2>
+            <p class="bio-text">The internet's friendliest designer kid.</p>
+          </div>
+          <!-- links -->
+          <div class="box-links">
+            <h2 class="links-title">Links</h2>
+            <ul class="links-list">
+              <li class="links-list-item">
+                <a
+                  class="                   "
+                  href="https://google.com/"
+                  target="_blank"
+                  aria-label="link to Browser"
+                >
+                  <svg class="social-icon" width="32" height="32">
+                    <use href="img/icons.svg#icon-Globe"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="links-list-item">
+                <a
+                  class="social-link"
+                  href="https://discord.com/"
+                  target="_blank"
+                  aria-label="link to Discord"
+                >
+                  <svg class="social-icon" width="32" height="32">
+                    <use href="img/icons.svg#icon-DiscordLogo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="links-list-item">
+                <a
+                  class="social-link"
+                  href="https://youtube.com/"
+                  target="_blank"
+                  aria-label="link to Youtube"
+                >
+                  <svg class="social-icon" width="32" height="32">
+                    <use href="img/icons.svg#icon-YoutubeLogo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="links-list-item">
+                <a
+                  class="social-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  aria-label="link to Twitter"
+                >
+                  <svg class="social-icon" width="32" height="32">
+                    <use href="img/icons.svg#icon-TwitterLogo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="links-list-item">
+                <a
+                  class="social-link"
+                  href="https://instagram.com/"
+                  target="_blank"
+                  aria-label="link to instagram"
+                >
+                  <svg class="social-icon" width="32" height="32 filtr-btn">
+                    <use href="img/icons.svg#icon-InstagramLogo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-galery">
+      <div class="container">
+        <h2 class="galery-title visually-hidden">filter of created products</h2>
+        <ul class="galery-btn-list">
+          <li class="btn-list-item">
+            <button class="active-btn galery-btn" type="button" id="">
+              Created <span class="btn-index btn-index-active">302</span>
+            </button>
+          </li>
+          <li class="btn-list-item">
+            <button class="galery-btn" type="button" id="">
+              Owned <span class="btn-index">67</span>
+            </button>
+          </li>
+          <li class="btn-list-item">
+            <button class="galery-btn" type="button" id="">
+              Collection
+              <span class="btn-index">4</span>
+            </button>
+          </li>
+        </ul>
+        <ul class="galery-list">
+          <li class="galery-list-item">
+            <a class="card-link" href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_01_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_01_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_02_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_02_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_03_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_03_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item hidden-el-mob">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_04_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_04_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item hidden-el-mob">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_05_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_05_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item hidden-el-mob">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_06_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_06_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item hidden-el-mob hidden-el-tab">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_07_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_07_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item hidden-el-mob hidden-el-tab">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_08_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_08_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="galery-list-item hidden-el-mob hidden-el-tab">
+            <a href="">
+              <img
+                class="card-img"
+                srcset="
+                  ../img/artist-page/artist_page_card-img_09_1x.webp 1x,
+                  ../img/artist-page/artist_page_card-img_09_2x.webp 2x
+                "
+                src="../img/artist-page/"
+                alt=""
+                width="330"
+                height="295"
+              />
+              <div class="card-wrapper">
+                <div class="card-box">
+                  <h2 class="card-title">Distant Galaxy</h2>
+                  <div class="card-info-box">
+                    <img
+                      srcset="
+                        ../img/artist-page/artist_page_hero_avatar_1x.webp 1x,
+                        ../img/artist-page/artist_page_hero_avatar_2x.webp 2x
+                      "
+                      src="../img/artist-page/artist_page_hero_avatar_1x.webp"
+                      alt=""
+                      width="24"
+                      height="24"
+                      class="card-avatar"
+                    />
+                    <p class="user-name">Animakid</p>
+                  </div>
+                </div>
+                <div class="card-box-price">
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Price</h3>
+                    <p class="price-box-text">1.63 ETH</p>
+                  </div>
+                  <div class="price-wrapper">
+                    <h3 class="price-box-title">Highest Bid</h3>
+                    <p class="price-box-text">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <load src="partials/footer.html" />
+  </body>
+</html>
