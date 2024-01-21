@@ -1,7 +1,5 @@
 @import url(./styles.css);
 
-.section {}
-
 @media only screen and (max-width: 833.98px) {
     .top-creators {
         padding: 30px 0;
@@ -59,10 +57,11 @@
     text-align: center;
     padding: 19px 0;
     width: calc(100%/4);
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-weight: 600;
     line-height: 1.4;
     text-transform: capitalize;
+    transition: color 300ms ease-in-out;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -84,7 +83,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: var(--caption-label);
+    background-color: var(--caption-lable);
 }
 
 .filter-mobile {
@@ -118,7 +117,7 @@
     text-align: center;
     width: 24px;
     margin-right: 10px;
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 16px;
     line-height: 1.4;
@@ -133,7 +132,7 @@
 
 .artist {
     min-width: 181px;
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 12px;
     line-height: 1.1;
@@ -143,7 +142,7 @@
     .artist {
         min-width: 59px;
         margin-right: 321px;
-        color: var(--caption-label);
+        color: var(--caption-lable);
         font-family: "Space Mono";
         font-size: 16px;
         line-height: 1.4;
@@ -166,7 +165,7 @@
     .change {
         width: 100px;
         margin-right: 20px;
-        color: var(--caption-label);
+        color: var(--caption-lable);
         font-family: "Space Mono";
         font-size: 16px;
         line-height: 1.4;
@@ -182,7 +181,7 @@
 .nft-sold {
     width: 160px;
     margin-right: 20px;
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 16px;
     line-height: 1.4;
@@ -196,7 +195,7 @@
 
 .volume {
     width: 100px;
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 12px;
     line-height: 1.1;
@@ -214,8 +213,6 @@
         width: 160px;
     }
 }
-
-.rankings-list {}
 
 .rankings-item {
     display: flex;
@@ -244,7 +241,7 @@
     height: 24px;
     flex-shrink: 0;
     margin-right: 10px;
-    color: var(--caption-label);
+    color: var(--caption-lable);
     font-family: "Space Mono";
     font-size: 12px;
     line-height: 1.1;
@@ -314,7 +311,7 @@
     }
 }
 
-.rankings-item:hover, .creator-name:focus {
+.rankings-item:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 16px 2px #000;
 }
