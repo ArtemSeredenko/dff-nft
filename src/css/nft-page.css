@@ -382,6 +382,11 @@ body {
   font-size: 16px;
 }
 
+.card-list .item {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
 .card-list .item:last-child {
   text-align: right;
 }
@@ -393,6 +398,10 @@ body {
 
   font-size: 12px;
   line-height: 110%;
+}
+
+.card-list .value {
+  font-size: 12px;
 }
 
 .btn-load-more {
