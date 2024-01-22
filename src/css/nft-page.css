@@ -119,7 +119,7 @@ body {
 
 .nft-title-box > p {
   margin-top: 10px;
-  color: var(--caption-label);
+  color: var(--caption-lable);
 }
 
 @media screen and (min-width: 1280px) {
@@ -176,7 +176,7 @@ body {
   margin-bottom: 10px;
 
   font-family: 'Space Mono';
-  color: var(--caption-label);
+  color: var(--caption-lable);
 
   text-transform: capitalize;
 }
@@ -188,7 +188,7 @@ body {
 }
 
 .icon-globe {
-  fill: var(--caption-label);
+  fill: var(--caption-lable);
 
   transition: fill 250ms ease-in-out;
 }
@@ -394,7 +394,7 @@ body {
 .card-list .item-title {
   margin-bottom: 8px;
 
-  color: var(--caption-label);
+  color: var(--caption-lable);
 
   font-size: 12px;
   line-height: 110%;
