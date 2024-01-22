@@ -314,7 +314,7 @@
 
 .rankings-item.animated-element.animation-right:hover,
 .rankings-item.animated-element.animation-left:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.5);
 }
 
