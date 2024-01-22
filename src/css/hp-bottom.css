@@ -8,7 +8,7 @@
     font-size: 28px;
     font-weight: 600;
     line-height: 1.4;
-
+    text-transform: capitalize;
     margin-bottom: 10px;
 }
 
@@ -18,8 +18,18 @@
     margin-bottom: 40px;
 }
 
-.discover-cards {
-    margin-bottom: 40px;
+@media screen and (min-width: 1280px) {
+    .under-heading {
+        text-transform: capitalize;
+    }
+
+    .heading {
+        line-height: 1.2;
+    }
+}
+
+.discover {
+    padding-bottom: 60px;
 }
 
 .discover-card {
@@ -61,13 +71,13 @@
 .disbox-title--top {
     font-size: 12px;
     line-height: 1.1;
-    color: var(--caption-label);
+    color: var(--caption-lable);
 
     margin-bottom: 8px;
 }
 
 .disbox-title--bottom {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.4;
 }
 
@@ -93,6 +103,10 @@
 }
 
 @media screen and (max-width: 834px) {
+    .discover-cards {
+        margin-bottom: 40px;
+    }
+
     .discover-link {
         width: inherit;
     }
@@ -143,6 +157,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .discover {
+        padding-bottom: 80px;
+    }
     .heading {
         font-size: 38px;
     }
@@ -181,27 +198,46 @@
 }
 
 /* Magic Mushrooms */
-
-.magicmush {
-    background-image: url(../img/homepage/hp_mushroom_mob_2x.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-@media screen and (max-width: 834px) {
-    .magicmush .container {
-        display: none;
-        background-image: url(../img/homepage/hp_mushroom_tablet_2x.webp);
+    .bg-magicmush {
+        margin: 0 auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
+
+@media screen and (max-width: 834px) {
     .magicmush {
+        padding: 0;
+    }
+    .magicmush .container {
+        display: none;
+    }
+
+    .bg-magicmush {
+        background-image: url(../img/homepage/hp_mushroom_mob_1x.webp);
         height: 590px;
+        width: 375px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 834px), (min-device-pixel-ratio: 2) {
+    .bg-magicmush {
+        background-image: url(../img/homepage/hp_mushroom_mob_2x.webp);
     }
 }
 
 @media screen and (min-width: 834px) {
+    .magicmush {
+        padding: 0;
+    }
+    .bg-magicmush {
+        background-image: url(../img/homepage/hp_mushroom_tablet_1x.webp);
+        width: 834px;
+    }
     .magicmush .container {
+        padding-bottom: 60px;
         height: 630px;
         display: flex;
         align-items: flex-end;
@@ -250,14 +286,34 @@
         margin-right: 12px;
     }
 }
+@media screen and (min-width: 834px), (min-device-pixel-ratio: 2) {
+    .bg-magicmush {
+        background-image: url(../img/homepage/hp_mushroom_tablet_2x.webp);
+    }
+}
 
 @media screen and (min-width: 1280px) {
+    .mm-link-ac {
+        font-size: 16px;
+        line-height: 1.4;
+    }
     .magicmush .heading {
         font-size: 51px;
     }
 
-    .magicmush {
-        background-image: url(../img/homepage/hp_mushroom_tablet_2x.webp);
+    .bg-magicmush {
+        width: 1280px;
+        background-image: url(../img/homepage/hp_mushroom_1x.webp);
+    }
+}
+@media screen and (min-width: 1280px), (min-device-pixel-ratio: 2) {
+    .bg-magicmush {
+        background-image: url(../img/homepage/hp_mushroom_2x.webp);
+    }
+    .mm-link-markplace {
+        font-size: 16px;
+        line-height: 1.4;
+
     }
 }
 
@@ -346,6 +402,7 @@
     }
 
     .hiw-card h3 {
+        text-transform: capitalize;
         font-size: 22px;
     }
 
@@ -371,6 +428,7 @@
 }
 
 .subwid-form input::placeholder {
+    text-transform: none;
     color: var(--Background, #2B2B2B);
     font-size: 16px;
     font-weight: 400;
@@ -378,6 +436,7 @@
 }
 
 .subwid-form button {
+    font-size: 16px;
     color: var(--text);
     display: flex;
     font-weight: 600;
@@ -416,6 +475,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .subwid {
+        padding-top: 40px;
+    }
     .subwid-content {
         padding: 60px;
     }
@@ -429,6 +491,7 @@
     .subwid-form input {
         height: 60px;
         margin-bottom: -20px;
+        padding-right: 65px;
     }
 
     .subwid-form button {
