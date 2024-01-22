@@ -418,7 +418,7 @@ body {
 
   font-weight: 600;
 
-  transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out !important;
   outline: transparent;
 }
 
@@ -453,4 +453,5 @@ body {
 .timer {
   opacity: 0;
   transform: translateX(100px);
+  z-index: 1;
 }
