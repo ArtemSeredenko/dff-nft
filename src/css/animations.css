@@ -109,9 +109,9 @@
 
 
 
-/* Анімація Пульсації (Pulse Animation): */
+/* Анімація Пульсації (Pulse Animation):  */
 
-/* @keyframes pulse {
+  /* @keyframes pulse {
   0% {
     transform: scale(1);
   }
@@ -127,28 +127,12 @@
 
 .pulsating-element {
   animation: pulse 2s infinite;
-} */
+}  */
 
 
-/* Анімація Перевороту (Flip Animation): */
 
-/* @keyframes flip {
-  0% {
-    transform: perspective(400px) rotateY(0);
-  }
 
-  50% {
-    transform: perspective(400px) rotateY(180deg);
-  }
 
-  100% {
-    transform: perspective(400px) rotateY(360deg);
-  }
-}
-
-.елемент-перевороту {
-  animation: flip 3;  
-} */
 
 
 
@@ -165,7 +149,7 @@
 }
 
 .rainbow-text {
-  background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+  background: linear-gradient(90deg, violet, rgb(120, 3, 203), #a259ff);
   background-size: 700% 700%;
   animation: rainbow 5s linear infinite;
   color: transparent;
