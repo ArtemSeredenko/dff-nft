@@ -223,7 +223,7 @@
     align-items: center;
     border-radius: 20px;
     background: var(--bg-secondary);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 834px) {
@@ -315,7 +315,8 @@
 }
 
 .rankings-item:hover, .creator-name:focus {
-    transform: scale(1.1);
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px 2px #000;
 }
 
 @media only screen and (max-width: 833.98px) {
