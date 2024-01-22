@@ -10,6 +10,7 @@
     />
     <title>dff-nft-project</title>
     <link rel="stylesheet" href="./css/nft-page.css" />
+    <script type="module" src="./js/nft-page.js" defer></script>
     <script type="module" src="./main.js" defer></script>
   </head>
   <body>
@@ -20,11 +21,15 @@
         <div class="container">
           <div class="nft-info">
             <div class="nft-title-box">
-              <h1>The Orbitians</h1>
-              <p>Minted on Sep 30, 2022</p>
+              <h1 class="animated-element animation-right">The Orbitians</h1>
+              <p class="animated-element animation-right">
+                Minted on Sep 30, 2022
+              </p>
             </div>
             <load ="./partials/timer.html" />
-            <div class="nft-info-box nft-info-box--1">
+            <div
+              class="nft-info-box nft-info-box--1 animated-element animation-right"
+            >
               <p>Created by</p>
               <a href="#" class="nft-info-link"
                 ><img
@@ -38,7 +43,7 @@
                 />Orbitian</a
               >
             </div>
-            <div class="nft-info-box">
+            <div class="nft-info-box animated-element animation-up">
               <p>Description</p>
               <div class="description">
                 <p class="part">
@@ -64,7 +69,7 @@
                 </p>
               </div>
             </div>
-            <div class="nft-info-box">
+            <div class="nft-info-box animated-element animation-up">
               <p>Details</p>
               <ul class="details-list">
                 <li class="details-item">
@@ -85,7 +90,7 @@
                 </li>
               </ul>
             </div>
-            <div class="nft-info-box">
+            <div class="nft-info-box animated-element animation-up">
               <p class="tags-text">Tags</p>
               <ul class="tags-list">
                 <li><a href="#" class="tags-link">Animation</a></li>
@@ -101,9 +106,11 @@
       <section class="collection section">
         <div class="container">
           <div class="wrapper">
-            <h2 class="section-title">More from this artist</h2>
+            <h2 class="section-title animated-element animation-left">
+              More from this artist
+            </h2>
             <ul class="collection-list">
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -144,7 +151,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -185,7 +192,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -226,7 +233,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -267,7 +274,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -308,7 +315,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -349,7 +356,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -390,7 +397,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -431,7 +438,7 @@
                   </article></a
                 >
               </li>
-              <li>
+              <li class="animated-element animation-up">
                 <a href="#" class="card">
                   <article>
                     <header>
@@ -473,7 +480,7 @@
                 >
               </li>
             </ul>
-            <a href="#" class="btn-load-more">
+            <a href="#" class="btn-load-more animated-element animation-scale">
               <svg class="icon-arrow" width="20" height="20">
                 <use href="./img/icons.svg#icon-ArrowRight"></use>
               </svg>

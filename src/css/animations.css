@@ -11,7 +11,6 @@
   transform: translateY(0);
 }
 
-
 /* ANIMATION TRANSFORM down*/
 .animated-element.animation-down {
   opacity: 0;
@@ -64,9 +63,9 @@
 }
 
 /* ANIMATION ROTATE DOWN */
-.animated-element.animation-rotate-down{
+.animated-element.animation-rotate-down {
   opacity: 0;
-  transform:  rotateX(-90deg);
+  transform: rotateX(-90deg);
   transition: opacity 1000ms, transform 1000ms;
 }
 
@@ -74,15 +73,6 @@
   opacity: 1;
   transform: rotate(0);
 }
-
-
-
-
-
-
-
-
-
 
 /* ANIMATION ROTATE X 360  */
 
@@ -100,16 +90,15 @@
   animation: rotateYText 1s linear 1;
 }
 
-
-
-
 /* Щоб застосувати вибрану анімацію, просто додайте клас у вашому HTML-коді.*/
 
 
 
 
 
-/* Анімація Пульсації (Pulse Animation):  */
+
+/* Анімація Пульсації (Pulse Animation):  *
+
 
   /* @keyframes pulse {
   0% {
@@ -128,6 +117,8 @@
 .pulsating-element {
   animation: pulse 2s infinite;
 }  */
+
+
 
 
 
@@ -156,7 +147,6 @@
   background-clip: text;
 } */
 
-
 /* Анімація Мерехтіння (Flicker Animation): */
 
 /* @keyframes flicker {
@@ -175,9 +165,7 @@
   animation: flicker 2s infinite;
 } */
 
-
 /* Анімація Зникання-З'явлення (Fade In-Out Animation): */
-
 
 /* @keyframes fadeInOut {
 
@@ -194,8 +182,6 @@
 .fade-in-out-element {
   animation: fadeInOut 3s ease-in-out infinite;
 } */
-
-
 
 /* Анімація Збільшення (Scale Up Animation): */
 
@@ -216,4 +202,3 @@
 .scale-up-element {
   animation: scaleUp 2s ease-in-out infinite;
 } */
-
