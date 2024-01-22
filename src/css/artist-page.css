@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-102%);
   padding: 5px;
   background-color: var(--cta);
   font-size: 15px;
@@ -170,19 +170,22 @@
   color: var(--text);
   width: 100%;
   border: none;
-  transition: color 100ms ease-in-out, transform 100ms ease-in-out;
+  transition: color 100ms ease-in-out, transform 100ms ease-in-out, bacground 250ms ease-in-out;
 }
 
 .copy-text-btn:active {
-  color: var(--bg-secondary);
+  color: var(--cta);
+  background: transparent;
+  border: 2px solid var(--cta);
 }
+
 
 .copy-text-btn:hover {
   transform: scale(1.05);
 }
 
 .copy-text-btn:active .icon-copy {
-  fill: var(--bg-secondary);
+  fill: var(--cta);
 }
 
 .icon-copy {
