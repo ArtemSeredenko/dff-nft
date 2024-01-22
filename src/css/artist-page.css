@@ -2,8 +2,8 @@
 
 
 
-/* HERO */
 
+/* ANIMATION */
 .notification {
     display: none;
     position: fixed;
@@ -22,6 +22,77 @@
 .notification-show {
     transform: translateX(-50%) translateY(100%);
 }
+
+
+
+
+/* ANIMATION TRANSFORM Y+*/
+.animated-element.animation-1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s, transform 0.9s;
+}
+
+.animated-element.animation-1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ANIMATION TRANSFORM X+ */
+.animated-element.animation-2 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animated-element.animation-2.visible {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+
+/* ANIMATION TRANSFORM Y - */
+.animated-element.animation-3 {
+    opacity: 0;
+    transform: translateY(-20PX);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animated-element.animation-3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ANIMATION TRANSFORM X- */
+*/ .animated-element.animation-4 {
+    opacity: 0;
+    transform: translateX(-100PX);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animated-element.animation-4.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* ANIMATION SCALE */
+.animated-element.animation-5 {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.9s, transform 0.9s;
+}
+
+.animated-element.animation-5.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* HERO */
 
 .hero {
     padding-bottom: 100px;
@@ -620,8 +691,7 @@
 .galery-list-item {
     background-color: var(--bg);
     border-radius: 20px;
-    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
-
+    /* transform 300ms ease-in-out, */
 }
 
 @media screen and (min-width:834px) {
@@ -640,7 +710,6 @@
 
 .galery-list-item:hover,
 .galery-list-item:focus {
-    transform: scale(1.03);
     box-shadow: 0px 4px 16px 2px black;
 }
 
