@@ -448,3 +448,67 @@
 .rocket-launch-icon {
   fill: var(--cta);
 }
+
+/* Browse Categories */
+
+.categories-title {
+  margin-bottom: 40px;
+
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+.categories-item {
+  position: relative;
+  overflow: hidden;
+  width: 148px;
+}
+.categories-img {
+  border-radius: 20px 20px 0px 0px;
+
+  width: 148px;
+  height: 142px;
+}
+
+.categories-text {
+  padding: 20px 20px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #3b3b3b;
+}
+
+.wrapper-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 148px;
+  height: 142px;
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7.5px);
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.categories-item:hover .wrapper-icon,
+.categories-item:focus .wrapper-icon {
+  opacity: 1;
+}
+
+.categories-icon {
+  stroke: #fff;
+  fill: transparent;
+}
+
+.categories-item:nth-child(1n + 7) .categories-text {
+  height: 90px;
+}
