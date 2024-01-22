@@ -93,6 +93,17 @@
     border: 2px solid var(--cta);
     border-radius: 20px;
 
+    transition: background-color 250ms linear;
+}
+
+.discover-link:hover,
+.discover-link:focus {
+    background-color: var(--cta);
+}
+
+.discover-link:hover svg,
+.discover-link:focus svg{
+    fill: var(--text);
 }
 
 .discover-link svg {
@@ -100,6 +111,7 @@
     width: 20px;
     fill: var(--cta);
     margin-right: 12px;
+    transition: fill 250ms linear;
 }
 
 @media screen and (max-width: 834px) {
@@ -188,6 +200,7 @@
     }
 
     .discover-link {
+        font-size: 16px;
         grid-column: 3/4;
         margin-bottom: 60px;
     }
@@ -233,7 +246,8 @@
         padding: 0;
     }
     .bg-magicmush {
-        background-image: url(../img/homepage/hp_mushroom_tablet_1x.webp);
+        background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_tablet_1x.webp);
         width: 834px;
     }
     .magicmush .container {
@@ -288,7 +302,16 @@
 }
 @media screen and (min-width: 834px), (min-device-pixel-ratio: 2) {
     .bg-magicmush {
-        background-image: url(../img/homepage/hp_mushroom_tablet_2x.webp);
+        background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_tablet_2x.webp);
+        background-size: cover;
+    }
+
+    
+
+    .magicmush .timer {
+        opacity: 1;
+        transform: translate(0);
     }
 }
 
@@ -303,12 +326,16 @@
 
     .bg-magicmush {
         width: 1280px;
-        background-image: url(../img/homepage/hp_mushroom_1x.webp);
+        background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_1x.webp);
+        background-size: cover;
     }
 }
 @media screen and (min-width: 1280px), (min-device-pixel-ratio: 2) {
     .bg-magicmush {
-        background-image: url(../img/homepage/hp_mushroom_2x.webp);
+        background-image: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_2x.webp);
+        background-size: cover;
     }
     .mm-link-markplace {
         font-size: 16px;
@@ -427,6 +454,10 @@
     margin-bottom: 16px;
 }
 
+.subwid-form input:focus-visible {
+    outline: 0;
+}
+
 .subwid-form input::placeholder {
     text-transform: none;
     color: var(--Background, #2B2B2B);
@@ -489,6 +520,7 @@
     }
 
     .subwid-form input {
+        font-size: 18px;
         height: 60px;
         margin-bottom: -20px;
         padding-right: 65px;
@@ -500,6 +532,6 @@
         height: 60px;
         width: auto;
         padding: 0 50px;
-        transform: translatey(-48px);
+        transform: translatey(-47px);
     }
 }
