@@ -312,9 +312,10 @@
   }
 }
 
-.rankings-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 16px 2px #000;
+.rankings-item.animated-element.animation-right:hover,
+.rankings-item.animated-element.animation-left:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 833.98px) {
@@ -379,9 +380,9 @@
 
 /* #region Animations */
 .rankings-item.animated-element.animation-left {
-  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .rankings-item.animated-element.animation-right {
-  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
