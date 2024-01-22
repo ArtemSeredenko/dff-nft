@@ -449,3 +449,8 @@ body {
 .btn-load-more:focus-visible .icon-arrow {
   fill: var(--text);
 }
+
+.timer {
+  opacity: 0;
+  transform: translateX(100px);
+}
