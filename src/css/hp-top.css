@@ -460,8 +460,14 @@
 
 .categories-list {
   display: flex;
+
   flex-wrap: wrap;
   gap: 19px;
+}
+@media only screen and (min-width: 834px) {
+  .categories-list {
+    gap: 30px;
+  }
 }
 .categories-item {
   position: relative;
@@ -509,6 +515,14 @@
   fill: transparent;
 }
 
-.categories-item:nth-child(1n + 7) .categories-text {
-  height: 90px;
+@media only screen and (max-width: 833.98px) {
+  .categories-item:nth-child(1n + 7) .categories-text {
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 1279.98px) {
+  .categories-item:nth-child(1n + 5) .categories-text {
+    height: 90px;
+  }
 }
