@@ -1,5 +1,6 @@
 @import url(./styles.css);
 
+
 @media only screen and (max-width: 833.98px) {
   .top-creators {
     padding: 30px 0;
@@ -374,4 +375,13 @@
   .volume-amount {
     width: 160px;
   }
+}
+
+/* #region Animations */
+.rankings-item.animated-element.animation-left {
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.rankings-item.animated-element.animation-right {
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
 }
