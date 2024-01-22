@@ -31,6 +31,7 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.9s, transform 0.9s;
+    transition-delay: 300ms;
 }
 
 .animated-element.animation-1.visible {
@@ -44,6 +45,7 @@
     opacity: 0;
     transform: translateX(100px);
     transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 300ms;
 }
 
 .animated-element.animation-2.visible {
@@ -57,6 +59,7 @@
     opacity: 0;
     transform: translateY(-20PX);
     transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 300ms;
 }
 
 .animated-element.animation-3.visible {
@@ -70,6 +73,7 @@
     opacity: 0;
     transform: translateX(-100PX);
     transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 300ms;
 }
 
 .animated-element.animation-4.visible {
