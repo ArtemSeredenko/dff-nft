@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/create-account.css" />
   </head>
   <body>
-    <load ="header.html" />
+    <load ="partials/header.html" />
 
     <section class="section create-account container">
       <img
@@ -19,6 +19,7 @@
         "
         src="./img/create-account/create-account_img_1x.webp"
         alt="Wallet image"
+        class="create-hero-img"
       />
       <div class="create-block">
         <h1 class="create-block-title">Create account</h1>
@@ -28,25 +29,75 @@
         </p>
         <form class="create-account-form" name="account-form">
           <div class="form-wrapper">
-            <!-- <div class="form-field">
+            <div class="form-field">
               <input
                 class="form-input"
                 type="text"
                 name="user-name"
                 id="create-user-name"
+                placeholder=" "
               />
-              <label class="form-label" for="create-user-name">Name</label>
+              <label class="form-label" for="create-user-name">Username</label>
               <svg class="form-icon" width="18" height="24">
                 <use href="./img/icons.svg#icon-User"></use>
               </svg>
-            </div> -->
-
-            <input class="input" required type="text" id="username" />
-            <label class="label" for="username">Username</label>
+            </div>
           </div>
+          <div class="form-wrapper">
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="email"
+                name="user-email"
+                id="create-user-email"
+                placeholder=" "
+              />
+              <label class="form-label" for="create-user-email"
+                >Email Addres</label
+              >
+              <svg class="form-icon" width="18" height="24">
+                <use href="./img/icons.svg#icon-EnvelopeSimple"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="password"
+                name="password"
+                id="create-user-pw"
+                placeholder=" "
+              />
+              <label class="form-label" for="create-user-pw">Password</label>
+              <svg class="form-icon" width="18" height="24">
+                <use href="./img/icons.svg#icon-LockKey"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="password"
+                name="confirm-pw"
+                id="create-confirm-pw"
+                placeholder=" "
+              />
+              <label class="form-label" for="create-confirm-pw"
+                >Confirm Password</label
+              >
+              <svg class="form-icon" width="18" height="24">
+                <use href="./img/icons.svg#icon-LockKey"></use>
+              </svg>
+            </div>
+          </div>
+          <button type="submit" class="form-btn">Create account</button>
         </form>
       </div>
     </section>
+    <!-- <input class="input" required type="text" id="username" />
+<label class="label" for="username">Enter Your Email Address</label> -->
 
     <!-- <load ="footer.html" /> -->
     <script src="./js/menu.js"></script>
