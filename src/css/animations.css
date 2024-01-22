@@ -1,63 +1,235 @@
-/* ANIMATION TRANSFORM Y+*/
-.animated-element.animation-1 {
+/* ANIMATION TRANSFORM up*/
+.animated-element.animation-up {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.9s, transform 0.9s;
   transition-delay: 300ms;
 }
 
-.animated-element.animation-1.visible {
+.animated-element.animation-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* ANIMATION TRANSFORM X+ */
-.animated-element.animation-2 {
+
+/* ANIMATION TRANSFORM down*/
+.animated-element.animation-down {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.9s, transform 0.9s;
+  transition-delay: 300ms;
+}
+
+.animated-element.animation-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ANIMATION TRANSFORM left */
+.animated-element.animation-left {
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 0.5s, transform 0.5s;
   transition-delay: 300ms;
 }
 
-.animated-element.animation-2.visible {
+.animated-element.animation-left.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-/* ANIMATION TRANSFORM Y - */
-.animated-element.animation-3 {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s, transform 0.5s;
-  transition-delay: 300ms;
-}
-
-.animated-element.animation-3.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ANIMATION TRANSFORM X- */
-.animated-element.animation-4 {
+/* ANIMATION TRANSFORM right */
+.animated-element.animation-right {
   opacity: 0;
   transform: translateX(-100px);
   transition: opacity 0.5s, transform 0.5s;
   transition-delay: 300ms;
 }
 
-.animated-element.animation-4.visible {
+.animated-element.animation-right.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 /* ANIMATION SCALE */
-.animated-element.animation-5 {
+.animated-element.animation-scale {
   opacity: 0;
   transform: scale(0);
   transition: opacity 0.9s, transform 0.9s;
 }
 
-.animated-element.animation-5.visible {
+.animated-element.animation-scale.visible {
   opacity: 1;
   transform: scale(1);
 }
+
+/* ANIMATION ROTATE DOWN */
+.animated-element.animation-rotate-down{
+  opacity: 0;
+  transform:  rotateX(-90deg);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.animated-element.animation-rotate-down.visible {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+
+
+
+
+
+
+
+
+
+/* ANIMATION ROTATE X 360  */
+
+@keyframes rotateYText {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.rotateX-text {
+  animation: rotateYText 1s linear 1;
+}
+
+
+
+
+/* Щоб застосувати вибрану анімацію, просто додайте клас у вашому HTML-коді.*/
+
+
+
+
+
+/* Анімація Пульсації (Pulse Animation): */
+
+/* @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsating-element {
+  animation: pulse 2s infinite;
+} */
+
+
+/* Анімація Перевороту (Flip Animation): */
+
+/* @keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+  }
+
+  50% {
+    transform: perspective(400px) rotateY(180deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(360deg);
+  }
+}
+
+.елемент-перевороту {
+  animation: flip 3;  
+} */
+
+
+
+/* Анімація Веселки (Rainbow Animation): */
+
+/* @keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.rainbow-text {
+  background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 700% 700%;
+  animation: rainbow 5s linear infinite;
+  color: transparent;
+  background-clip: text;
+} */
+
+
+/* Анімація Мерехтіння (Flicker Animation): */
+
+/* @keyframes flicker {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.flickering-element {
+  animation: flicker 2s infinite;
+} */
+
+
+/* Анімація Зникання-З'явлення (Fade In-Out Animation): */
+
+
+/* @keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.fade-in-out-element {
+  animation: fadeInOut 3s ease-in-out infinite;
+} */
+
+
+
+/* Анімація Збільшення (Scale Up Animation): */
+
+/* @keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale-up-element {
+  animation: scaleUp 2s ease-in-out infinite;
+} */
+
