@@ -11,9 +11,115 @@
     <title>Rankings</title>
     
     <link rel="stylesheet" href="/dff-nft/assets/rankings-1bb0a539.css">
+    <link rel="stylesheet" href="/dff-nft/assets/nft-page-c9d917a7.css">
   </head>
   <body>
-    ENOENT: no such file or directory, open '/home/runner/work/dff-nft/dff-nft/src/partials/header.html'
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The auction for The Orbitians NFT which has been made by Obitian. The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain.">
+    <title>dff-nft-project</title>
+    <link rel="icon" type="image/svg+xml" href="/dff-nft/favicon.svg">
+    
+    <script src="../main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex-center">
+            <nav class="header-nav">
+                <a class="header-logo-link" href="./index.html">
+                    <svg class="header-logo-icon" width="32" height="32">
+                        <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-Storefront"></use>
+                    </svg>
+                    <svg class="header-nft-icon" width="200" height="20">
+                        <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-NFT-Marketplace"></use>
+                    </svg>
+                </a>
+                <ul class="header-menu-list">
+                    <li class="header-menu-item">
+                        <a class="header-menu-link current" href="#marketplace">Marketplace</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="#rankings">Rankings</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="#connect-wallet">Connect a wallet</a>
+                    </li>
+                </ul>
+                <div class="header-buttons">
+                    <a href="#create-account" class="btn-sign-up">
+                        <svg class="icon-user" width="20" height="20">
+                            <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-User"></use>
+                        </svg>
+                        <span class="sign-up-text">Sign Up</span>
+                    </a>
+                    <button class="menu-btn js-open-menu" type="button" aria-label="Open menu button"
+                        aria-expanded="false">
+                        <svg class="menu-btn-icon" width="24" height="24">
+                            <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-List"></use>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-menu js-menu-container">
+        <div class="mobile">
+            <div class="close-btn">
+                <button class="menu-close-btn js-close-menu" type="button">
+                    <svg class="menu-close-icon" width="25" height="25">
+                        <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-Plus"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link" href="#marketplace">
+                            <svg class="icon-modal" width="22" height="22">
+                                <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-Storefront"></use>
+                            </svg>
+                            <span class="sign-up-text">Marketplace</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link" href="#rankings">
+                            <svg class="icon-modal" width="22" height="22">
+                                <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-TrendUp"></use>
+                            </svg>
+                            <span class="sign-up-text">Rankings</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link" href="#marketplace">
+                            <svg class="icon-modal" width="22" height="22">
+                                <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-Wallet"></use>
+                            </svg>
+                            <span class="sign-up-text">Connect a wallet</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-modal">
+                <a href="#" class="btn-sign-up modal">
+                    <svg class="icon-user" width="20" height="20">
+                        <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-User"></use>
+                    </svg>
+                    <span class="sign-up-text">Sign Up</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
 
     <!-- Write your code here -->
     <section class="section top-creators">
@@ -458,8 +564,7 @@
 
     
     <script src="./js/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="./js/rankings.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
