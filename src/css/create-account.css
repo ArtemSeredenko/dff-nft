@@ -151,13 +151,26 @@
 }
 
 .form-btn {
-  /* width: 100%; */
+  width: 100%;
   background: var(--cta);
   color: var(--text);
   font-weight: 600;
+  font-size: 16px;
   padding: 12px 102px;
   border-radius: 20px;
   margin-top: 15px;
+}
+
+@media screen and (min-width: 834px) {
+  .form-btn {
+    max-width: 325px;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form-btn {
+    max-width: 370px;
+  }
 }
 
 /* .form-wrapper {
