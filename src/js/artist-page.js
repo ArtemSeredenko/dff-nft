@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var elements = document.querySelectorAll('.animated-element');
 
@@ -43,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
+    window.addEventListener('load', function() {
+        handleScroll(); 
+    });
+
     document.addEventListener('scroll', handleScroll);
-    handleScroll(); // Викликати функцію на початку для перевірки видимості елементів
 });
