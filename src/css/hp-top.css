@@ -132,6 +132,7 @@
   text-align: center;
   font-weight: 600;
   line-height: 1.4;
+  transition: background 250ms ease-in-out;
 }
 .discr-btn:hover,
 .discr-btn:focus {
@@ -144,6 +145,7 @@
 }
 .icon-launch-rocket {
   fill: var(--cta);
+  transition: fill 250ms ease-in-out;
 }
 
 .discr-btn:hover .icon-launch-rocket {
@@ -235,7 +237,15 @@
 
   font-family: 'Space Mono';
   line-height: 1.4;
+  border: 2px solid transparent;
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
 }
+
+.item-link:hover {
+  background-color: transparent;
+  border: 2px solid var(--cta);
+}
+
 @media only screen and (min-width: 834px) {
   .item-link {
     font-size: 22px;
@@ -340,7 +350,14 @@
   padding: 20px;
   border-radius: 20px;
   background: var(--bg-secondary);
+  transition: transform 250ms ease-in-out;
 }
+.creators-item:hover {
+  box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+
 .list-number {
   display: flex;
   justify-content: center;
@@ -438,6 +455,7 @@
   text-align: center;
   font-weight: 600;
   line-height: 1.4;
+  transition: background 250ms ease-in-out;
 }
 .btn-view-rankings:hover {
   background: var(--cta);
@@ -462,6 +480,7 @@
 }
 .rocket-launch-icon {
   fill: var(--cta);
+  transition: fill 250ms ease-in-out;
 }
 
 /* Browse Categories */
