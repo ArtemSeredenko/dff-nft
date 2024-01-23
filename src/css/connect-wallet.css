@@ -9,6 +9,7 @@
 @media screen and (min-width: 834px) {
   .connect-wallet {
     flex-direction: row;
+    padding-top: 40px;
   }
   .connect-wallet > img,
   .connect-wallet > .connection-block {

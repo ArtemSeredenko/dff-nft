@@ -10,15 +10,17 @@
     />
     <title>Rankings</title>
     <link rel="stylesheet" href="./css/rankings.css" />
+    <script type="module" src="./main.js" defer></script>
+    <script type="module" src="./js/rankings.js" defer></script>
   </head>
   <body>
-    <!-- <load ="header.html" /> -->
+    <load src="./partials/header.html" />
 
     <!-- Write your code here -->
     <section class="section top-creators">
       <div class="container">
-        <h1 class="page-title">Top Creators</h1>
-        <p class="page-subtitle">
+        <h1 class="page-title animated-element rotateX-text">Top Creators</h1>
+        <p class="page-subtitle animated-element animation-up">
           Check out top ranking NFT artists on the NFT Marketplace.
         </p>
       </div>
@@ -26,24 +28,60 @@
 
     <section class="rankings-section">
       <div class="container">
-        <h2 class="visually-hidden ">Top-20 rankings</h2>
+        <h2 class="visually-hidden">Top-20 rankings</h2>
         <div class="filter">
-          <a href="#" class="filter-link filter-link-active" data-filter=""
+          <a
+            href="#"
+            class="filter-link filter-link-active animated-element animation-down"
+            data-filter=""
             >Today</a
           >
-          <a href="#" class="filter-link" data-filter="">This Week</a>
-          <a href="#" class="filter-link" data-filter="">This Month</a>
-          <a href="#" class="filter-link" data-filter="">All Time</a>
+          <a
+            href="#"
+            class="filter-link animated-element animation-down"
+            data-filter=""
+            >This Week</a
+          >
+          <a
+            href="#"
+            class="filter-link animated-element animation-down"
+            data-filter=""
+            >This Month</a
+          >
+          <a
+            href="#"
+            class="filter-link animated-element animation-down"
+            data-filter=""
+            >All Time</a
+          >
         </div>
         <div class="filter-mobile">
-          <a href="#" class="filter-link filter-link-active" data-filter=""
+          <a
+            href="#"
+            class="filter-link filter-link-active animated-element animation-down"
+            data-filter=""
             >1d</a
           >
-          <a href="#" class="filter-link" data-filter="">7d</a>
-          <a href="#" class="filter-link" data-filter="">30d</a>
-          <a href="#" class="filter-link" data-filter="">All Time</a>
+          <a
+            href="#"
+            class="filter-link animated-element animation-down"
+            data-filter=""
+            >7d</a
+          >
+          <a
+            href="#"
+            class="filter-link animated-element animation-down"
+            data-filter=""
+            >30d</a
+          >
+          <a
+            href="#"
+            class="filter-link animated-element animation-down"
+            data-filter=""
+            >All Time</a
+          >
         </div>
-        <div class="table-header">
+        <div class="table-header animated-element animation-down">
           <span class="number">&#35;</span>
           <p class="artist">Artist</p>
           <p class="change">Change</p>
@@ -51,15 +89,15 @@
           <p class="volume">Volume</p>
         </div>
         <ol class="rankings-list">
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">1</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_01_1x.webp 1x,
-                ../img/rankings/rank_ava_01_2x.webp 2x
+                ./img/rankings/rank_ava_01_1x.webp 1x,
+                ./img/rankings/rank_ava_01_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_01_1x.webp"
+              src="./img/rankings/rank_ava_01_1x.webp"
               alt="Jaydon Ekstrom Bothman avatar"
               loading="lazy"
             />
@@ -68,15 +106,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">2</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_02_1x.webp 1x,
-                ../img/rankings/rank_ava_02_2x.webp 2x
+                ./img/rankings/rank_ava_02_1x.webp 1x,
+                ./img/rankings/rank_ava_02_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_02_1x.webp"
+              src="./img/rankings/rank_ava_02_1x.webp"
               alt="Ruben Carder avatar"
               loading="lazy"
             />
@@ -85,15 +123,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">3</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_03_1x.webp 1x,
-                ../img/rankings/rank_ava_03_2x.webp 2x
+                ./img/rankings/rank_ava_03_1x.webp 1x,
+                ./img/rankings/rank_ava_03_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_03_1x.webp"
+              src="./img/rankings/rank_ava_03_1x.webp"
               alt="Alfredo Septimus avatar"
               loading="lazy"
             />
@@ -102,15 +140,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">4</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_04_1x.webp 1x,
-                ../img/rankings/rank_ava_04_2x.webp 2x
+                ./img/rankings/rank_ava_04_1x.webp 1x,
+                ./img/rankings/rank_ava_04_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_04_1x.webp"
+              src="./img/rankings/rank_ava_04_1x.webp"
               alt="Davis Franci avatar"
               loading="lazy"
             />
@@ -119,15 +157,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">5</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_05_1x.webp 1x,
-                ../img/rankings/rank_ava_05_2x.webp 2x
+                ./img/rankings/rank_ava_05_1x.webp 1x,
+                ./img/rankings/rank_ava_05_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_05_1x.webp"
+              src="./img/rankings/rank_ava_05_1x.webp"
               alt="Livia Rosser avatar"
               loading="lazy"
             />
@@ -136,15 +174,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">6</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_06_1x.webp 1x,
-                ../img/rankings/rank_ava_06_2x.webp 2x
+                ./img/rankings/rank_ava_06_1x.webp 1x,
+                ./img/rankings/rank_ava_06_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_06_1x.webp"
+              src="./img/rankings/rank_ava_06_1x.webp"
               alt="Kianna Donin avavtar"
               loading="lazy"
             />
@@ -153,15 +191,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">7</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_07_1x.webp 1x,
-                ../img/rankings/rank_ava_07_2x.webp 2x
+                ./img/rankings/rank_ava_07_1x.webp 1x,
+                ./img/rankings/rank_ava_07_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_07_1x.webp"
+              src="./img/rankings/rank_ava_07_1x.webp"
               alt="Phillip Lipshutz avatar"
               loading="lazy"
             />
@@ -170,15 +208,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">8</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_08_1x.webp 1x,
-                ../img/rankings/rank_ava_08_2x.webp 2x
+                ./img/rankings/rank_ava_08_1x.webp 1x,
+                ./img/rankings/rank_ava_08_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_08_1x.webp"
+              src="./img/rankings/rank_ava_08_1x.webp"
               alt="Maria Rosser avatar"
               loading="lazy"
             />
@@ -187,15 +225,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">9</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_09_1x.webp 1x,
-                ../img/rankings/rank_ava_09_2x.webp 2x
+                ./img/rankings/rank_ava_09_1x.webp 1x,
+                ./img/rankings/rank_ava_09_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_09_1x.webp"
+              src="./img/rankings/rank_ava_09_1x.webp"
               alt="Kianna Stanton avatar"
               loading="lazy"
             />
@@ -204,15 +242,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">10</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_10_1x.webp 1x,
-                ../img/rankings/rank_ava_10_2x.webp 2x
+                ./img/rankings/rank_ava_10_1x.webp 1x,
+                ./img/rankings/rank_ava_10_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_10_1x.webp"
+              src="./img/rankings/rank_ava_10_1x.webp"
               alt="Angel Lubin avatar"
               loading="lazy"
             />
@@ -221,15 +259,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">11</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_11_1x.webp 1x,
-                ../img/rankings/rank_ava_11_2x.webp 2x
+                ./img/rankings/rank_ava_11_1x.webp 1x,
+                ./img/rankings/rank_ava_11_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_11_1x.webp"
+              src="./img/rankings/rank_ava_11_1x.webp"
               alt="Allison Torff avatar"
               loading="lazy"
             />
@@ -238,15 +276,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">12</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_12_1x.webp 1x,
-                ../img/rankings/rank_ava_12_2x.webp 2x
+                ./img/rankings/rank_ava_12_1x.webp 1x,
+                ./img/rankings/rank_ava_12_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_12_1x.webp"
+              src="./img/rankings/rank_ava_12_1x.webp"
               alt="Davis Workman avatar"
               loading="lazy"
             />
@@ -255,15 +293,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">13</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_13_1x.webp 1x,
-                ../img/rankings/rank_ava_13_2x.webp 2x
+                ./img/rankings/rank_ava_13_1x.webp 1x,
+                ./img/rankings/rank_ava_13_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_13_1x.webp"
+              src="./img/rankings/rank_ava_13_1x.webp"
               alt="Lindsey Lipshutz avatar"
               loading="lazy"
             />
@@ -272,15 +310,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">14</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_14_1x.webp 1x,
-                ../img/rankings/rank_ava_14_2x.webp 2x
+                ./img/rankings/rank_ava_14_1x.webp 1x,
+                ./img/rankings/rank_ava_14_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_14_1x.webp"
+              src="./img/rankings/rank_ava_14_1x.webp"
               alt="Randy Carder avatar"
               loading="lazy"
             />
@@ -289,15 +327,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">15</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_15_1x.webp 1x,
-                ../img/rankings/rank_ava_15_2x.webp 2x
+                ./img/rankings/rank_ava_15_1x.webp 1x,
+                ./img/rankings/rank_ava_15_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_15_1x.webp"
+              src="./img/rankings/rank_ava_15_1x.webp"
               alt="Lydia Culhane avatar"
               loading="lazy"
             />
@@ -306,15 +344,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">16</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_16_1x.webp 1x,
-                ../img/rankings/rank_ava_16_2x.webp 2x
+                ./img/rankings/rank_ava_16_1x.webp 1x,
+                ./img/rankings/rank_ava_16_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_16_1x.webp"
+              src="./img/rankings/rank_ava_16_1x.webp"
               alt="Rayna Bator avatar"
               loading="lazy"
             />
@@ -323,15 +361,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">17</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_17_1x.webp 1x,
-                ../img/rankings/rank_ava_17_2x.webp 2x
+                ./img/rankings/rank_ava_17_1x.webp 1x,
+                ./img/rankings/rank_ava_17_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_17_1x.webp"
+              src="./img/rankings/rank_ava_17_1x.webp"
               alt="Jocelyn Westervelt avatar"
               loading="lazy"
             />
@@ -340,15 +378,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">18</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_18_1x.webp 1x,
-                ../img/rankings/rank_ava_18_2x.webp 2x
+                ./img/rankings/rank_ava_18_1x.webp 1x,
+                ./img/rankings/rank_ava_18_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_18_1x.webp"
+              src="./img/rankings/rank_ava_18_1x.webp"
               alt="Marilyn Torff avavtar"
               loading="lazy"
             />
@@ -357,15 +395,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-right">
             <p class="rank-number">19</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_19_1x.webp 1x,
-                ../img/rankings/rank_ava_19_2x.webp 2x
+                ./img/rankings/rank_ava_19_1x.webp 1x,
+                ./img/rankings/rank_ava_19_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_19_1x.webp"
+              src="./img/rankings/rank_ava_19_1x.webp"
               alt="Skylar Levin avatar"
               loading="lazy"
             />
@@ -374,15 +412,15 @@
             <p class="amount-sold">602</p>
             <p class="volume-amount">12.4 ETH</p>
           </li>
-          <li class="rankings-item">
+          <li class="rankings-item animated-element animation-left">
             <p class="rank-number">20</p>
             <img
               class="creator-avatar"
               srcset="
-                ../img/rankings/rank_ava_20_1x.webp 1x,
-                ../img/rankings/rank_ava_20_2x.webp 2x
+                ./img/rankings/rank_ava_20_1x.webp 1x,
+                ./img/rankings/rank_ava_20_2x.webp 2x
               "
-              src="../img/rankings/rank_ava_20_1x.webp"
+              src="./img/rankings/rank_ava_20_1x.webp"
               alt="Terry Dorwart avatar"
               loading="lazy"
             />
@@ -395,6 +433,6 @@
       </div>
     </section>
 
-    <!-- <load ="footer.html" /> -->
+    <load src="partials/footer.html" />
   </body>
 </html>
