@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/dff-nft/commonHelpers7.js"></script>
     <link rel="modulepreload" crossorigin href="/dff-nft/assets/menu-83e1e70b.js">
     <link rel="modulepreload" crossorigin href="/dff-nft/assets/main-2f1a60c9.js">
-    <link rel="stylesheet" href="/dff-nft/assets/rankings-4673fc04.css">
+    <link rel="stylesheet" href="/dff-nft/assets/rankings-35091d44.css">
   </head>
   <body>
         <header class="header">
@@ -476,10 +476,10 @@
     <footer>
   <div class="container">
     <div class="footer-desktop-wrapper">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper animated-element animation-right">
         <div class="footer-logo">
           <a
-            href="../index.html"
+            href="./index.html"
             class="footer-logo-link"
             aria-label="NFT Marketplace logo and link to main page"
           >
@@ -546,44 +546,45 @@
           </li>
         </ul>
       </div>
-      <div class="footer-nav">
+      <div class="footer-nav animated-element animation-scale ">
         <p class="footer-nav-title">Explore</p>
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
-            <a href="" class="footer-nav-link">Marketplace</a>
+            <a href="./marketplace.html" class="footer-nav-link">Marketplace</a>
           </li>
           <li class="footer-nav-item">
-            <a href="" class="footer-nav-link">Rankings</a>
+            <a href="./rankings.html" class="footer-nav-link">Rankings</a>
           </li>
           <li class="footer-nav-item">
-            <a href="" class="footer-nav-link">Connect a wallet</a>
+            <a href="./connect-wallet.html" class="footer-nav-link">Connect a wallet</a>
           </li>
         </ul>
       </div>
-      <div class="footer-form">
+      <div class="footer-form animated-element animation-left">
         <p class="footer-form-title">Join our weekly digest</p>
         <p class="footer-form-text">
           Get exclusive promotions & updates straight to your inbox.
         </p>
-        <div class="footer-input">
-          <input
-            class="input-field"
-            name="user-email"
-            type="email"
-            placeholder="Enter Your Email Address"
-            pattern="[a-zA-Z0-9._%±]+@ [a-zA-Z0-9.-]+\. [a-zA-Z0-9_-]+"
-            required
-          />
+        <form class="footer-input">
+            <input
+              class="input-field"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Enter your email address"
+              pattern="[a-zA-Z0-9._%±]+@ [a-zA-Z0-9.-]+\. [a-zA-Z0-9_-]+"
+              required
+            />
           <button class="footer-btn" type="submit">
             <svg class="footer-btn-icon" width="20" height="20">
               <use href="/dff-nft/assets/icons-9e43ab1d.svg#icon-EnvelopeSimple"></use>
             </svg>
             Subscribe
           </button>
-        </div>
+        </form>
       </div>
     </div>
-    <div class="footer-bottom-part">
+    <div class="footer-bottom-part animated-element animation-rotate-down">
       <p class="footer-bottom-text">
         &#169; NFT Market. Use this template freely.
       </p>
