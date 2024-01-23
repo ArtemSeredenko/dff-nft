@@ -310,7 +310,28 @@ header .container {
     }
 }
 
-/* .btn-modal:hover {
-    background-color: transparent;
-    border: 2px solid var(--cta);
-} */
+
+/* Scroll up button */
+.scroll-up-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 22px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.30);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.scroll-up-icon {
+    fill: currentColor;
+    transition: color 250ms ease-in-out;
+}
+
+.scroll-up-btn:hover {
+    color: var(--cta);
+}

@@ -310,6 +310,7 @@
     }
 
     .mm-link-markplace:hover {
+        color: var(--text);
         background-color: rgba(0,0,0, 0.00);
         transform: scale(1.05);
     }
@@ -508,6 +509,11 @@
     border: none;
 }
 
+.subwid-form button:hover, .subwid-form button:focus {
+    background-color: var(--bg);
+    border: 1px solid var(--cta);
+}
+
 .subwid-form svg {
     height: 20px;
     width: 20px;
@@ -560,4 +566,7 @@
         padding: 0 50px;
         transform: translateY(-44px);
     }
+}
+.discover-box--user p {
+    font-size: 16px;
 }
