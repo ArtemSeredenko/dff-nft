@@ -310,6 +310,7 @@
     }
 
     .mm-link-markplace:hover {
+        color: var(--text);
         background-color: rgba(0,0,0, 0.00);
         transform: scale(1.05);
     }
@@ -506,6 +507,11 @@
     width: 100%;
     border-radius: 20px;
     border: none;
+}
+
+.subwid-form button:hover, .subwid-form button:focus {
+    background-color: var(--bg);
+    border: 1px solid var(--cta);
 }
 
 .subwid-form svg {
