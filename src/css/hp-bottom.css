@@ -1,0 +1,563 @@
+@import url('./timer.css');
+@import url('./animations.css');
+
+.txt-a-r {
+    text-align: right;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.under-heading {
+    text-transform: none;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    .under-heading {
+        text-transform: capitalize;
+    }
+
+    .heading {
+        line-height: 1.2;
+    }
+}
+
+.discover {
+    padding-bottom: 60px;
+}
+
+.discover-card {
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+}
+
+.discover-card.animated-element.animation-scale {
+    transition: transform 250ms linear;
+}
+
+.discover-card.animated-element.animation-scale:hover {
+    transform: scale(1.03);
+}
+
+.discover-box {
+    padding: 20px 20px 25px;
+}
+
+.discover-box--title {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.discover-box--user {
+    display: flex;
+}
+
+.discover-box--user p {
+    line-height: 1.4;
+}
+
+.discover-box--user img {
+    margin-right: 12px;
+    margin-bottom: 25px;
+}
+
+.discover-box--price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Space Mono;
+}
+
+.disbox-title--top {
+    font-size: 12px;
+    line-height: 1.1;
+    color: var(--caption-lable);
+
+    margin-bottom: 8px;
+}
+
+.disbox-title--bottom {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.discover-link {
+    display: inline-flex;
+    font-weight: 600;
+    line-height: 1.4;
+    align-items: center;
+    justify-content: center;
+
+
+    padding: 19px 0;
+    border: 2px solid var(--cta);
+    border-radius: 20px;
+
+    transition: background-color 250ms linear,
+    transform 250ms linear;
+}
+
+.discover-link:hover,
+.discover-link:focus {
+    background-color: var(--cta);
+    transform: scale(1.05);
+}
+
+.discover-link:hover svg,
+.discover-link:focus svg{
+    fill: var(--text);
+}
+
+.discover-link svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--cta);
+    margin-right: 12px;
+    transition: fill 250ms linear;
+}
+
+@media screen and (max-width: 834px) {
+    .discover-cards {
+        margin-bottom: 40px;
+    }
+
+    .discover-link {
+        width: inherit;
+    }
+
+    .discover-card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width: 1280px) {
+    .discover-card:nth-child(3n) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .discover .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .under-heading {
+        margin-bottom: 40px;
+    }
+
+    .discover-cards {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .discover-card {
+        width: 330px;
+    }
+
+    .discover-card > img {
+        width: 330px;
+    }
+
+    .discover-link {
+        grid-row: 1/3;
+        grid-column-start: 2;
+        height: 60px;
+        margin: auto 0 40px auto;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .discover {
+        padding-bottom: 80px;
+    }
+    .heading {
+        font-size: 38px;
+    }
+    .under-heading {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    .container {
+        width: 1280px;
+    }
+    .discover .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .discover .heading {
+        grid-column: 1/3;
+    }
+    .discover .under-heading {
+        grid-row: 2;
+        margin-bottom: 60px;
+    }
+    .discover-cards {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .discover-link {
+        font-size: 16px;
+        grid-column: 3/4;
+        margin-bottom: 60px;
+    }
+
+    .discover-card:nth-child(3n) {
+        display: list-item;
+    }
+}
+
+/* Magic Mushrooms */
+    .bg-magicmush {
+        margin: 0 auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+@media screen and (max-width: 834px) {
+    .magicmush {
+        padding: 0;
+    }
+    .magicmush .container {
+        display: none;
+    }
+
+    .bg-magicmush {
+        background-image: url(../img/homepage/hp_mushroom_mob_1x.webp);
+        height: 590px;
+        width: 375px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 834px), (min-device-pixel-ratio: 2) {
+    .bg-magicmush {
+        background-image: url(../img/homepage/hp_mushroom_mob_2x.webp);
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .magicmush {
+        padding: 0;
+    }
+    .bg-magicmush {
+        background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_tablet_1x.webp);
+        width: 834px;
+    }
+    .magicmush .container {
+        padding-bottom: 60px;
+        height: 630px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .timer {
+        margin: auto 0 0 auto;
+    }
+
+    .mm-link-ac {
+        display: inline-flex;
+        background-color: var(--bg);
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    .mm-link-ac img {
+        margin-right: 12px;
+    }
+
+    .magicmush .heading {
+        font-size: 38px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .mm-link-markplace {
+        color: var(--bg);
+        display: inline-flex;
+        font-weight: 600;
+        line-height: 1.4;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--text);
+        height: 60px;
+    
+    
+        padding: 20px 50px;
+        border-radius: 20px;
+        background-color: var(--text);
+
+        transition: background-color 250ms linear,
+        transform 250ms linear;
+    }
+
+    .mm-link-markplace:hover {
+        background-color: rgba(0,0,0, 0.00);
+        transform: scale(1.05);
+    }
+    
+    .mm-link-markplace svg {
+        height: 20px;
+        width: 20px;
+        fill: var(--cta);
+        margin-right: 12px;
+        transition: fill 250ms linear;
+    }
+
+    .mm-link-markplace:hover svg {
+        fill: var(--text);
+    }
+}
+@media screen and (min-width: 834px), (min-device-pixel-ratio: 2) {
+    .bg-magicmush {
+        background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_tablet_2x.webp);
+        background-size: cover;
+    }
+
+    
+
+    .magicmush .timer {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mm-link-ac {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .magicmush .heading {
+        font-size: 51px;
+    }
+
+    .bg-magicmush {
+        width: 1280px;
+        background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_1x.webp);
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 1280px), (min-device-pixel-ratio: 2) {
+    .bg-magicmush {
+        background-image: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_2x.webp);
+        background-size: cover;
+    }
+    .mm-link-markplace {
+        font-size: 16px;
+        line-height: 1.4;
+
+    }
+}
+
+/* How it works */
+
+.hiw-card {
+    text-transform: none;
+    padding: 20px;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    column-gap: 20px;
+    grid-template-columns: 100px auto;
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+}
+
+.hiw-img {
+    width: 100px;
+    height: 100px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+}
+
+.hiw-card h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    grid-column-start: 2;
+    margin-bottom: 10px;
+}
+
+.hiw-card p {
+    font-size: 12px;
+    line-height: 1.4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+@media screen and (max-width: 834px) {
+    .hiw-card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .hiw-cards {
+        display: flex;
+        align-items: stretch;
+        column-gap: 30px;
+    }
+
+    .hiw-card  {
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+        width: 210px;
+        padding-bottom: 30px;
+    }
+
+    .hiw-img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+
+    .hiw-card h3 {
+        text-align: center;
+    }
+
+    .hiw-card p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hiw-card {
+        width: 330px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hiw-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hiw-card h3 {
+        text-transform: capitalize;
+        font-size: 22px;
+    }
+
+    .hiw-card p {
+        font-size: 16px;
+    }
+}
+
+/* Subscribe widget */
+
+.subwid-img {
+    margin-bottom: 30px;
+}
+
+.subwid-form input {
+    padding: 12px 20px;
+    width: 100%;
+    background-color: var(--text);
+    border-radius: 20px;
+    border: 1px solid var(--caption-label-text, #858584);
+
+    margin-bottom: 16px;
+}
+
+.subwid-form input:focus-visible {
+    outline: 0;
+}
+
+.subwid-form input::placeholder {
+    text-transform: none;
+    color: var(--Background, #2B2B2B);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.subwid-form button {
+    font-size: 16px;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    line-height: 1.4;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cta) ;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+.subwid-form svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--text);
+    margin-right: 12px;
+}
+
+@media screen and (min-width: 834px) {
+    .subwid-content {
+        background-color: var(--bg-secondary);
+        border-radius: 20px;
+        padding: 40px 30px;
+        display: flex;
+    }
+
+    .subwid-img {
+        width: 300px;
+        height: 280px;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .subwid {
+        padding-top: 40px;
+    }
+    .subwid-content {
+        padding: 60px;
+    }
+
+    .subwid-img {
+        width: 425px;
+        height: 310px;
+        margin-right: 80px;
+    }
+
+    .subwid-form input {
+        font-size: 18px;
+        height: 60px;
+        margin-bottom: -20px;
+        padding-right: 65px;
+    }
+
+    .subwid-form button {
+        margin-left: auto;
+        margin-bottom: -20px;
+        height: 60px;
+        width: auto;
+        padding: 0 50px;
+        transform: translatey(-47px);
+    }
+}
