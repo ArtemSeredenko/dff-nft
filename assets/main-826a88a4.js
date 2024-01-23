@@ -1,0 +1,2 @@
+import"./menu-9338e1f7.js";document.addEventListener("DOMContentLoaded",function(){var i=document.querySelectorAll(".animated-element"),o=function(n){var e=n.getBoundingClientRect();return e.top>=0&&e.bottom<=(window.innerHeight||document.documentElement.clientHeight)},t=function(){i.forEach(function(n){o(n)&&!n.classList.contains("visible")&&n.classList.add("visible")})};window.addEventListener("load",function(){t()}),document.addEventListener("scroll",t)});
+//# sourceMappingURL=main-826a88a4.js.map
