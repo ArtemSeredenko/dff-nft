@@ -183,7 +183,7 @@ footer {
 
 .input-field {
     width: 100%;
-    min-height: 46px;
+    height: 46px;
     padding: 11px 20px;
     border-radius: 20px;
     border: 1px solid var(--caption-lable);
@@ -191,12 +191,13 @@ footer {
     outline: transparent;
     color: var(--bg);
     line-height: 1.4;
+    transition: box-shadow 300ms ease-in-out, border 300ms ease-in-out;
 }
 
 @media only screen and (min-width: 834px) {
     .input-field {
         width: 100%;
-        min-height: 60px;
+        height: 60px;
         padding: 19px 20px;
         border: none;
     }
@@ -233,6 +234,7 @@ footer {
 
 @media only screen and (min-width: 834px) {
     .footer-btn {
+        height: 100%;
         position: absolute;
         top: 0;
         right: 0;
