@@ -117,15 +117,12 @@
 
 .nft-view-section {
   background-color: var(--bg-secondary);
+  padding: 40px 0;
 }
 
-.marketplace-wrapper {
-  padding-top: 40px;
-}
-
-@media only screen and (min-width: 1280px) {
-  .marketplace-wrapper {
-    padding-top: 60px;
+@media only screen and (min-width: 834px) {
+  .nft-view-section {
+    padding: 80px 0;
   }
 }
 
