@@ -89,6 +89,21 @@ header .container {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
+    transition: color 250ms ease-in-out;
+    text-transform: initial;
+}
+.header-menu-item {
+    transition: transform 250ms ease-in-out;
+}
+
+.header-menu-item:hover .header-menu-link {
+    color:var(--cta)
+}
+
+
+.header-menu-item:hover {
+    color:var(--cta);
+    transform: scale(1.1);
 }
 
 
@@ -105,27 +120,45 @@ header .container {
 }
 
 
+
+.btn-sign-up:hover {
+    background-color: transparent;
+    border: 2px solid var(--cta);
+    transform: scale(1.1);
+}
+
+
+
 .btn-sign-up {
     display: none;
+    transition: transform 250ms ease-in-out,background-color 250ms ease-in-out,border 250ms ease-in-out;
+    border: 2px solid transparent;
+
 }
 
 .btn-sign-up.modal {
     display: flex;
     height: 60px;
-    width: 152px;
+    width: 156px;
     padding: 0px 30px;
     justify-content: center;
     align-items: center;
     gap: 12px;
     border-radius: 20px;
-    background: var(--cta);
+    border-color: var(--text);
+    background-color: transparent;
+}
+
+.btn-sign-up.modal:hover {
+    background-color: var(--cta);
+    border-color:var(--cta);
 }
 
 @media screen and (min-width: 1280px) {
     .btn-sign-up {
         display: flex;
         height: 60px;
-        width: 152px;
+        width: 156px;
         padding: 0px 30px;
         justify-content: center;
         align-items: center;
@@ -145,12 +178,18 @@ header .container {
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
+    transition: color 200ms ease-in-out;
 }
 
 .menu-btn,
 .menu-close-btn {
     background-color: transparent;
     border: none;
+}
+
+.menu-close-btn:hover .menu-close-icon {
+    fill: var(--cta);
+
 }
 
 /* Mobile Menu */
@@ -168,6 +207,7 @@ header .container {
 .menu-close-icon {
     transform: rotate(45deg);
     fill: var(--text);
+        transition: fill 300ms ease-in-out;
 }
 
 .close-btn {
@@ -184,7 +224,9 @@ header .container {
     }
 }
 
+
 .mobile-menu {
+    z-index: 888;
     position: fixed;
     top: 0;
     right: 0;
@@ -198,11 +240,15 @@ header .container {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(17.5px);
     visibility: hidden;
+    transition: opasity 200ms ease-in-out, visibility 200ms ease-in-out, transform 200ms ease-in-out;
+    transform: translateX(100%);
 }
 
 .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
+    transform: translateX(0);
+
 }
 
 @media screen and (min-width: 768px) {
@@ -219,6 +265,7 @@ header .container {
 
 .icon-modal {
     fill: var(--text);
+    transition: fill 200ms ease-in-out;
 }
 
 .mob-menu {
@@ -236,7 +283,20 @@ header .container {
     display: flex;
     align-items: center;
     gap: 14px;
+    transition: transform 200ms ease-in-out;
 }
+
+
+
+.mobile-menu-link:hover {
+    transform: scaleX(1.05);
+}
+
+.mobile-menu-link:hover .icon-modal {
+    fill: var(--cta);
+}
+
+
 
 .btn-modal {
     padding-left: 40px;
@@ -249,3 +309,8 @@ header .container {
         padding-top: 143px;
     }
 }
+
+/* .btn-modal:hover {
+    background-color: transparent;
+    border: 2px solid var(--cta);
+} */
