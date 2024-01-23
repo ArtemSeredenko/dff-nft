@@ -1,0 +1,2 @@
+const u=new Date().getTime()+216e6,a=document.querySelector(".hoursValue"),l=document.querySelector(".minutesValue"),r=document.querySelector(".secondsValue");setInterval(function(){const e=new Date().getTime(),t=u-e,o=Math.floor(t/(1e3*60*60*24)),n=Math.floor(t%(1e3*60*60*24)/(1e3*60*60)+o*24),s=Math.floor(t%(1e3*60*60)/(1e3*60)),c=Math.floor(t%(1e3*60)/1e3);a.textContent=n,l.textContent=s,r.textContent=c},1e3);
+//# sourceMappingURL=timer-15301c8a.js.map
