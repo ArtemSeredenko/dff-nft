@@ -38,6 +38,14 @@
     border-radius: 20px;
 }
 
+.discover-card.animated-element.animation-scale {
+    transition: transform 250ms linear;
+}
+
+.discover-card.animated-element.animation-scale:hover {
+    transform: scale(1.03);
+}
+
 .discover-box {
     padding: 20px 20px 25px;
 }
@@ -94,12 +102,14 @@
     border: 2px solid var(--cta);
     border-radius: 20px;
 
-    transition: background-color 250ms linear;
+    transition: background-color 250ms linear,
+    transform 250ms linear;
 }
 
 .discover-link:hover,
 .discover-link:focus {
     background-color: var(--cta);
+    transform: scale(1.05);
 }
 
 .discover-link:hover svg,
@@ -287,11 +297,21 @@
         line-height: 1.4;
         align-items: center;
         justify-content: center;
+        border: 2px solid var(--text);
+        height: 60px;
     
     
         padding: 20px 50px;
         border-radius: 20px;
         background-color: var(--text);
+
+        transition: background-color 250ms linear,
+        transform 250ms linear;
+    }
+
+    .mm-link-markplace:hover {
+        background-color: rgba(0,0,0, 0.00);
+        transform: scale(1.05);
     }
     
     .mm-link-markplace svg {
@@ -299,6 +319,11 @@
         width: 20px;
         fill: var(--cta);
         margin-right: 12px;
+        transition: fill 250ms linear;
+    }
+
+    .mm-link-markplace:hover svg {
+        fill: var(--text);
     }
 }
 @media screen and (min-width: 834px), (min-device-pixel-ratio: 2) {
