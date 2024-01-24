@@ -222,33 +222,106 @@
 }
 
 /* Magic Mushrooms */
-    .bg-magicmush {
-        margin: 0 auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+
+.bg-magicmush {
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+    url(../img/homepage/hp_mushroom_mob_1x.webp);
+    margin: 0 auto;
+    height: 590px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mm-link-ac {
+    display: inline-flex;
+    background-color: var(--bg);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.mm-link-ac img {
+    margin-right: 12px;
+}
+
+.magicmush .heading {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.mm-link-markplace {
+    color: var(--bg);
+    display: inline-flex;
+    font-weight: 600;
+    line-height: 1.4;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--text);
+    height: 60px;
 
 
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: var(--text);
+
+    transition: background-color 250ms linear,
+    transform 250ms linear;
+}
+
+.mm-link-markplace:hover {
+    color: var(--text);
+    background-color: rgba(0,0,0, 0.00);
+    transform: scale(1.05);
+}
+
+.mm-link-markplace svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--cta);
+    margin-right: 12px;
+    transition: fill 250ms linear;
+}
+
+.mm-link-markplace:hover svg {
+    fill: var(--text);
+}
+  
 @media screen and (max-width: 834px) {
+
     .magicmush {
         padding: 0;
     }
-    .magicmush .container {
-        display: none;
-    }
 
     .bg-magicmush {
-        background-image: url(../img/homepage/hp_mushroom_mob_1x.webp);
-        height: 590px;
-        width: 375px;
+        background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
+        url(../img/homepage/hp_mushroom_mob_2x.webp);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
+        padding-top: 120px;
     }
-}
-@media screen and (max-width: 834px), (min-device-pixel-ratio: 2) {
-    .bg-magicmush {
-        background-image: url(../img/homepage/hp_mushroom_mob_2x.webp);
+
+    .mm-link-markplace {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .magicmush .heading {
+        margin-bottom: 204px;
+    }
+
+    .magicmush .container {
+        position: relative;
+    }
+
+    .magicmush .timer {
+        position: absolute;
+        top: 170px;
+        right: 40px;
+        transform: scale(1.06);
     }
 }
 
@@ -260,6 +333,7 @@
         background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
         url(../img/homepage/hp_mushroom_tablet_1x.webp);
         width: 834px;
+        height: 630px;
     }
     .magicmush .container {
         padding-bottom: 60px;
@@ -270,61 +344,6 @@
 
     .timer {
         margin: auto 0 0 auto;
-    }
-
-    .mm-link-ac {
-        display: inline-flex;
-        background-color: var(--bg);
-        border-radius: 20px;
-        padding: 10px 20px;
-        margin-bottom: 30px;
-    }
-
-    .mm-link-ac img {
-        margin-right: 12px;
-    }
-
-    .magicmush .heading {
-        font-size: 38px;
-        line-height: 1.2;
-        margin-bottom: 30px;
-    }
-
-    .mm-link-markplace {
-        color: var(--bg);
-        display: inline-flex;
-        font-weight: 600;
-        line-height: 1.4;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid var(--text);
-        height: 60px;
-    
-    
-        padding: 20px 50px;
-        border-radius: 20px;
-        background-color: var(--text);
-
-        transition: background-color 250ms linear,
-        transform 250ms linear;
-    }
-
-    .mm-link-markplace:hover {
-        color: var(--text);
-        background-color: rgba(0,0,0, 0.00);
-        transform: scale(1.05);
-    }
-    
-    .mm-link-markplace svg {
-        height: 20px;
-        width: 20px;
-        fill: var(--cta);
-        margin-right: 12px;
-        transition: fill 250ms linear;
-    }
-
-    .mm-link-markplace:hover svg {
-        fill: var(--text);
     }
 }
 @media screen and (min-width: 834px), (min-device-pixel-ratio: 2) {
