@@ -1,9 +1,21 @@
-// Устанавливаем дату завершения таймера
- const countDownDate = new Date().getTime() + 216000000;
+const hoursValue = document.querySelector(".hoursValue");
+const minutesValue = document.querySelector(".minutesValue");
+const secondsValue = document.querySelector(".secondsValue");
+let countDownDate;
 
- const hoursValue = document.querySelector(".hoursValue");
- const minutesValue = document.querySelector(".minutesValue");
- const secondsValue = document.querySelector(".secondsValue");
+if (localStorage.getItem("date")) {
+    countDownDate = JSON.parse(localStorage.getItem("date"));
+} else {
+    countDownDate = new Date().getTime() + 216000000;
+    localStorage.setItem("date", JSON.stringify(countDownDate));
+};
+
+// Устанавливаем дату завершения таймера
+//  const countDownDate = new Date().getTime() + 216000000;
+
+
+
+
 
  // Обновляет таймер каждую секунду
  const x = setInterval(function() {
