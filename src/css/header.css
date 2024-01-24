@@ -136,7 +136,7 @@ header .container {
 
 }
 
-.btn-sign-up.modal {
+.btn-sign-menu {
     display: flex;
     height: 60px;
     width: 158px;
@@ -145,13 +145,15 @@ header .container {
     align-items: center;
     gap: 12px;
     border-radius: 20px;
-    border-color: var(--text);
+    border:2px solid var(--text);
     background-color: transparent;
+    transition: transform 250ms ease-in-out, border-color 259ms ease-in-out, background-color 250ms ease-in-out;
 }
 
-.btn-sign-up.modal:hover {
+.btn-sign-menu:hover {
     background-color: var(--cta);
     border-color:var(--cta);
+    transform: scale(1.05);
 }
 
 @media screen and (min-width: 1280px) {
