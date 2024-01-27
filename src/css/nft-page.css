@@ -269,8 +269,7 @@ body {
 }
 
 .collection-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 30px;
 
   margin-top: 30px;
@@ -281,19 +280,14 @@ body {
   .collection-list {
     margin-top: 80px;
 
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 1280px) {
   .collection-list {
     margin-top: 80px;
-
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .collection-list * {
@@ -389,6 +383,7 @@ body {
 
 .card-list .item:last-child {
   text-align: right;
+  white-space: nowrap;
 }
 
 .card-list .item-title {

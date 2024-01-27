@@ -20,7 +20,6 @@ animatedElements.forEach(element => {
 function addClassName(entries) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
-    console.log(entry.target);
     entry.target.classList.add('visible');
   });
 }
